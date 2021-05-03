@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="soundIcon.png" sizes="32x32">
+    <title>Sam's Sounds</title>
+
+    <link rel="stylesheet" href ="style.css">
+  </head>
+  <!-- date object code built from an example and notes by Professor Sofy Yuditskaya -->
+  <!-- using the date object to get the day of the week then changing the page background color to a different shade of purple each day -->
+  <body id="bod" onload ="refreshTheClock()">
+    <script type="text/javascript">
+    //refreshTheClock() has a variable called "refreshInterval" which we set to 1000 milliseconds,
+    //the standard time measurement unit in most programming languages
+    //and a variable called mytime which runs the built-in function setTimeout()
+    //setTimeout() is being passed clockDisplay() via its parentheses and the value of refreshInterval
+  function refreshTheClock(){
+    var refreshInterval=1000; // Refresh rate in milli seconds
+    var mytime=setTimeout('clockDisplay()',refreshInterval);
+  }
+
+  //clockDisplay() is the function that displays the clock as we developed it in class
+  function clockDisplay(){
+    // new instance of the date object
+    // and passing that object's info into a variable I am calling "d"
+    var d = new Date();
+    var weekday = new Array(7);
+    var weekday2 = new Array(7);
+    // a variable I am calling hours getting the information from the getHours() method of the Date() object passed into it
+  //  var days = d.getDay();
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    weekday2[0] = "#4b276a";
+    weekday2[1] = "#492d78";
+    weekday2[2] = "#483284";
+    weekday2[3] = "#473690";
+    weekday2[4] = "#463a9a";
+    weekday2[5] = "#4540a8";
+    weekday2[6] = "#4345b6";
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    var seconds = d.getSeconds();
+    var days = weekday[d.getDay()];
+    var days2 = weekday2[d.getDay()];
+    // a variable I called "clock" that contains the concatenation of text and number variables
+    var clock = " at " + hours + ":" + minutes + ":" + seconds + " EDT/EST";
+  //  var week = days;
+    document.getElementById("weekd").innerHTML = days;
+    document.getElementById("when").innerHTML = clock;
+    document.getElementById("bod").style.backgroundColor = days2;
+    //document.getElementById("weekd").innerHTML = week;
+    //after we write the current time into the element with "demo" ID, we run refreshTheClock();
+    refreshTheClock();
+    }
+
+  </script>
+
+
+    <!-- Header -->
+    <header>
+      <div class="topMenu">
+        <text>
+          <span class="topMenuItems"><a href="index.html">Home</a></span>
+          <span class="topMenuItems"><a href="pixelArt.html">Pixels</a></span>
+          <span class="topMenuItems"><a href="video.html">Video</a></span>
+          <span class="topMenuItems"><a href="contact.html">About</a></span>
+        </text>
+      </div>
+      <h1><span id="rcorner">Music</span></h1>
+      <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          <IMG  SRC="menuIcon.svg" ALT="Three black lines parallel on the horizontal axis symbolic of a menu button.">
+        </button>
+        <div class="dropdown-content">
+          <text style="font-size: 20px">
+          <a href="index.html">Home</a>
+          <a href="pixelArt.html">Pixels</a>
+          <a href="video.html">Video</a>
+          <a href="contact.html">About</a>
+        </text>
+        </div>
+      </div>
+
+
+    </header>
+
+    <main id="all">
+    <!-- content grid -->
+    <div class="row">
+      <div class="columnP">
+        <div class="box">
+            <p><strong> "Sam" - Release </strong></p>
+            <p><em>Collection of lonesome made "music".</em></p>
+            <embed>
+              <iframe title="Player for a music album called Release by "Sam"" src="https://archive.org/embed/sam-release&playlist=1"  width="100%" height="200px" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </embed>
+          </div>
+
+          <div class="box">
+            <p><strong> Next Bus Pls - break:build</strong></p>
+            <p><em>	A track made in collaboration with Kwami Winfield for an <em>@nycnoise</em> benefit compilation.</em></p>
+            <embed>
+              <iframe title="Player for an audio track called break:build by Next Bus Pls" style="border: 0; width: 100%; height: 240px;" src="https://bandcamp.com/EmbeddedPlayer/album=2848955867/size=large/bgcol=333333/linkcol=ffffff/artwork=small/track=4013119620/transparent=true/" seamless><a href="https://nycnoise.bandcamp.com/album/stuff-i-like-vol-3">STUFF I LIKE VOL.3 by NYC NOISE</a></iframe>            </embed>
+          </div>
+
+          <div class="box">
+            <p><strong> 4uarm - Ready </strong></p>
+            <p><em>Live recording from performance duo with Sweet (aka Change).</em></p>
+            <embed>
+              <iframe title="Player for an audio track called Ready by 4uarm" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1509863558/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://4uarm.bandcamp.com/track/ready">Ready by 4uarm</a></iframe>
+            </embed>
+          </div>
+        </div>
+        <div class="columnP">
+          <div class="box">
+              <p><strong> DJ "Sam" - Selected Clipping Works </strong></p>
+              <p><em>		Small collection of remixed music blown out of proportion released through <a href= "https://copyright420.bandcamp.com">Copyright 420</a> in late 2020.</em></p>
+              <embed>
+                <iframe title="Player for a music album called Selected Clipping Works by "Sam"" style="border: 0; width: 100%; height: 295px;" src="https://bandcamp.com/EmbeddedPlayer/album=3664479188/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless><a href="https://copyright420.bandcamp.com/album/selected-clipping-works-2020">Selected Clipping Works 2020 by DJ &quot;Sam&quot;</a></iframe>
+              </embed>
+            </div>
+
+            <div class="box">
+              <p><strong> BOTTOM TEXT - What Doth Life? </strong></p>
+              <p><em>Album put out through Dominican Republic based label <em>El cuarto elástico</em> in April of 2018.
+        			Other members of BOTTOM TEXT include Milly Cohen, Ray Alfonso, Maggie Gault, Misha Lukov; sometimes more or less. The album was <a href="https://www.tinymixtapes.com/chocolate-grinder/listen-bottom-text-garnishing" target="_blank">reviewed in the (temporarily) late and great Tiny Mix Tapes</a>.</em></p>
+              <embed>
+                <iframe title="Player for a music album by BOTTOM TEXT called What Doth Life?" style="border: 0; width: 100%; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/album=1543204057/size=large/bgcol=333333/linkcol=ffffff/artwork=small/track=447279866/transparent=true/" seamless><a href="https://elcuartoelasticomusica.bandcamp.com/album/what-doth-life">WHAT DOTH LIFE? by BOTTOM TEXT</a></iframe>
+              </embed>
+            </div>
+          </div>
+          <div class="columnP">
+              <div class="box">
+                <p><strong> "Sam" - Video Presentation & Memetic North Brooklyn </strong></p>
+                <p><em>Two tracks for Heavy Days label in Miami. Originally released as 2nd, published as "Sam".</em></p>
+                <embed>
+                  <iframe title="Player for two track by "Sam" called Video Presentation and Memetic North Brooklyn." style="border: 0; width: 100%; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=2686907853/size=large/bgcol=333333/linkcol=ffffff/artwork=small/track=3575822829/transparent=true/" seamless><a href="https://heavydaysfax.bandcamp.com/album/covid-collection-week-one">Covid Collection - Week One by &quot;Sam&quot;</a></iframe>
+               </embed>
+              </div>
+
+              <div class="box">
+                <p><strong> 2uarm </strong></p>
+                <p><em>Lonesome album I put out as <strong>2uarm</strong> on <em>Tall Tapes</em> in April of 2019, it is called Miami Cannibal Attack.</em></p>
+                <embed>
+                  <iframe title="Player for a music album by 2uarm called Miami Cannibal Attack" style="border: 0; width: 100%; height: 420px;" src="https://bandcamp.com/EmbeddedPlayer/album=1066102050/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless><a href="https://talltapes.bandcamp.com/album/miami-cannibal-attack">Miami Cannibal Attack by 2uarm</a></iframe>
+                </embed>
+              </div>
+            </div>
+    </div>
+    <!-- video grid -->
+    <h1 style="text-align:center"><span style="background-color: lightblue">Footage of Live Performances</span></h1>
+    <div class="row">
+      <div class="columnV">
+        <p>
+          <iframe title="Video of a live performance by "Sam"" class="vids"  width="99%" height="auto" src="https://www.youtube.com/embed/Qzu9I6LLAYI" width="auto" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <p style="background-color: lightblue">
+          <em>
+            Video taken in early February of 2020 Florida by Andrew Chadwick at [REDACTED] in Miami for a "noise festival".
+          </em>
+        </p>
+
+      </div>
+      <div class="columnV">
+        <p>
+          <iframe title="Video of another performance by "Sam"" class="vids"  width="99%" height="auto" src="https://www.youtube.com/embed/6qF-3dOamWU?start=83" width="auto" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <p style="background-color: lightblue">
+          <em>
+            Video taken in early January of 2020 Florida by Andrew Chadwick at the Civic Media Center in Gainseville, Florida in January while on tour with FRANK CONSENT, Kwami Winfield, and Afterlife.Online.
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Flexible Photo Grid adapted from W3:https://www.w3schools.com/howto/howto_js_image_grid.asp  -->
+        <h1 style="text-align:center"><span style="background-color: white">Photos of Live Performances</span></h1>
+        <div class="row">
+          <div class="columnP">
+            <picture>
+              <source media="(max-width:1250px)" srcset="music1.jpg">
+              <source media="(min-width:1250px)" srcset="music1Big.jpg">
+              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music1.jpg" alt="A sepia tinted photograph of 4 people in a large white and red room. From left to right: a curly-haired person in a flannel shirt, slightly unbuttoned is slouched over playing a saxophone; another person in a beanie and flannel is seated at a large white folding table twisting knobs on various electronic music devices; next a person in a white dress shirt, beanie, and cargo vest plays a large red bass guitar; lastly a person in an all black tracksuit and black coat with green tape for glasses is crouched over a laptop on the same white table. " style="width:100%;">
+              <p style="text-align:center">
+              <em><span style="background-color: lightblue">
+                 in duolingo (covering Wolf Eyes) at the Windjammer on Halloween 2019 / shot by <a href="http://instagram.com/bigfuckingbug">Chloe Carrasco.</a>
+              </span></em>
+            </p>
+            </picture>
+            <picture>
+              <source media="(max-width:1250px)" srcset="music4.jpg">
+              <source media="(min-width:1250px)" srcset="music4Big.jpg">
+              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music4.jpg" alt="a close-up profile shot of a person with short curly hair and oval glasses holding up a microphone to their lips and twisting a knob on a audio mixer. The image is in black and white." style="width:100%;">
+              <p style="text-align:center">
+              <em><span style="background-color: lightblue">
+                 in 4uarm for Noise Brunch 3 by Center for Psychic Technology at h0l0 on June 23rd, 2019 shot by <a href="http://instagram.com/auniqueting">@auniqueting</a>.
+              </span></em>
+            </p>
+            </picture>
+          </div>
+
+
+          <div class="columnP">
+            <picture>
+              <source media="(max-width:1250px)" srcset="music2.jpg">
+              <source media="(min-width:1250px)" srcset="music2Big.jpg">
+              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music2.jpg" alt="An overhead shot of a joining of five gloved hands which is shown above an covering the face of a person with curly hair in striped pajamas laying on a dark gray floor holding up a bag above their head." style="width:100%;">
+              <p style="text-align:center">
+              <em><span style="background-color: lightblue">
+               my last solo set at The Glove around August 17th or so, shot by Mallie aka Grout aka Somebutty.
+             </span></em>
+            </p>
+            </picture>
+            <picture>
+              <source media="(max-width:1250px)" srcset="music5.jpg">
+              <source media="(min-width:1250px)" srcset="music5Big.jpg">
+              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music5.jpg" alt="A landscape portrait of a person balancing atop a green suitcase, pulling it open with a gloved hand to expose the legs and hand of a person inside the suitcase. In the backgroun we can see a hand holding the neck of a guitar." style="width:100%;">
+              <p style="text-align:center">
+              <em><span style="background-color: lightblue">
+                 in 2uarm full band with Gladys Harlow, Erinn Buhyoff, and Alex Capraro at a place on moffatt in Ridgewood in 2019, shot by <a href="http://www.walterwlodarczyk.com">Walter Wlodarczyk.</a>
+              </span></em>
+            </p>
+            </picture>
+
+            </div>
+
+            <div class="columnP">
+              <picture>
+                <source media="(max-width:1250px)" srcset="music3.jpg">
+                <source media="(min-width:1250px)" srcset="music3Big.jpg">
+                <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music3.jpg" alt="A shot of a small person in a white lab coat holding up a large cutout of an eye up to cover their one exposed eye. Covering the other half of their face is the back of a curlyhaired person holding up a glove to their mouth." style="width:100%;">
+                <p style="text-align:center">
+                <em><span style="background-color: lightblue">
+                  pictured improvising a live score for a performance by Kennie Zhou at the Living Gallery in Brooklyn, NY.
+                </span></em>
+              </p>
+              </picture>
+
+              <picture>
+                <source media="(max-width:1250px)" srcset="music6.jpg">
+                <source media="(min-width:1250px)" srcset="music6Big.jpg">
+                <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="music6.jpg" alt="A photo of two people wearing black and white clotching at a table draped in black cloth on a stage in front of a small crowd in a medium sized performance room. On the table is a laptop and audio mixer as well as other devices and cables." style="width:100%;">
+                <p style="text-align:center">
+                <em><span style="background-color: lightblue">
+                   in 4uarm with Sweet for Noise Brunch 3 by Center for Psychic Technology at h0l0 on June 23rd, 2019 photo taken from social media.
+                </span></em>
+              </p>
+              </picture>
+              </div>
+          </div>
+
+    <script>
+      function bigImg(x) {
+          x.style.width = "101%";
+      }
+
+      function smallImg(x) {
+          x.style.width = "99%";
+      }
+    </script>
+  </main>
+  <footer>
+        <p>
+          <strong><text id="textSize"> Text Size:</text></strong>
+            <button onclick="smallText()"> Small </button>
+            <script type="text/javascript">
+              function smallText(){
+                //Document Object Model
+                //translates html into javaScript
+                 document.getElementById('textStatus').innerHTML = "Small";
+                //this part of the Document Object Model translates CSS into Javascipt
+                document.getElementById("all").style.fontSize = "18px";
+                document.getElementById("currentText").style.fontSize = "18px";
+                document.getElementById("weekd").style.fontSize = "18px";
+                document.getElementById("when").style.fontSize = "18px";
+                document.getElementById("textStatus").style.fontSize = "18px";
+                document.getElementById("textSize").style.fontSize = "18px";
+
+              }
+            </script>
+            <button onclick="largeText()"> Large </button>
+            <script type="text/javascript">
+              function largeText(){
+                //Document Object Model
+                //translates html into javaScript
+                document.getElementById('textStatus').innerHTML = "Large";
+                //this part of the Document Object Model translates CSS into Javascipt
+                document.getElementById("all").style.fontSize = "30px";
+                document.getElementById("textStatus").style.fontSize = "30px";
+                document.getElementById("weekd").style.fontSize = "30px";
+                document.getElementById("when").style.fontSize = "30px";
+                document.getElementById("currentText").style.fontSize = "30px";
+                document.getElementById("textSize").style.fontSize = "30px";
+              }
+            </script>
+          </p>
+          <p><strong><text id="currentText">Current: </text></strong>
+          <em><text id=textStatus>Small</text></em>
+        </p>
+        <p>
+        <strong><text id="weekd"></text></strong>
+        <strong><text id="when"></text></strong>
+
+        </div>
+    </footer>
+  </body>
+  </html>

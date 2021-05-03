@@ -1,0 +1,401 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* font downloaded from dafont.com originally called Arcade Classic and posted by the user Glitch: https://www.dafont.com/arcade-classic.font */
+@font-face {
+  font-family: pixelGlitch;
+  src: url(arcadeGlitch.ttf);
+}
+
+/* font downloaded from dafont.com originally called Our Arcade Games and posted by the user Font Bureau: https://www.dafont.com/our-arcade-games.font */
+@font-face {
+  font-family: pixel;
+  src: url(arcade.ttf);
+}
+
+@font-face {
+  font-family: basic;
+  src: url(PAPL_.ttf);
+}
+
+header {
+  text-align: center;
+  font-family: pixelGlitch;
+  color: lightgrey;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+
+}
+
+/* tagline for mobile*/
+#intro {
+  background-color: lightgray;
+  font-size: 18px;
+  color: black;
+  margin-top: 8px;
+  vertical-align: middle;
+    text-align: center;
+  font-family: pixel;
+  width: 98%;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+}
+
+
+#linkBod{
+  background-image: url("indexBack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#linkButton {
+
+border-radius: 25px;
+border: 2px solid pink;
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(255,150,255,1) 0%, rgba(255,94,130,0.37557603686635943) 100%);
+}
+
+#rcorner {
+
+border-radius: 25px;
+border: 2px solid pink;
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(255,150,255,1) 0%, rgba(255,94,130,0.37557603686635943) 100%);
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+
+
+.columnP img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+}
+
+.columnV img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+
+.box {
+  background-color: lightblue;
+  margin-top: 8px;
+  align-content: center;
+  width: 98%;
+  padding: 35px;
+  margin-left: 20px;
+  margin-right: 4px;
+  border-width: 5px;
+  border-color: purple;
+  border: dashed;
+}
+
+.symbols {
+  background-color: trans;
+  margin-top: 2px;
+  margin-left: 15%;
+  vertical-align: center;
+  horizontal-align: center;
+  max-width: 75%;
+  padding: 15px;
+  border-width: 5px;
+  border-color: purple;
+  border: dotted;
+  align-content: center;
+
+}
+
+.about {
+  background-color: lightblue;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 98%;
+  padding: 25px;
+  margin-top: 18px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-width: 5px;
+  border-color: purple;
+  border: dashed;
+  border-radius: 15px 50px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 800px) {
+  .columnP {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+
+  .columnV {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .vids{
+    height:644px
+    }
+
+    .topMenu {
+      display: none;
+    }
+
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .columnP {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .columnV {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .vids{
+    height:240px;
+    }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+}
+
+
+
+#all{
+  font-family: pixel;
+  font-size: 18px;
+  margin-top: 1px;
+
+}
+
+#textStatus{
+  font-family: basic;
+  font-size: 18px;
+}
+
+#when{
+  font-family: basic;
+  font-size: 18px;
+}
+
+#weekd{
+  font-family: basic;
+  font-size: 18px;
+}
+
+
+body{
+  font-family: pixel;
+  font-size: 16px;
+  margin: 0;
+
+}
+
+p{
+
+}
+
+a:link {
+ color: black;
+}
+
+a:visited {
+ color: white;
+}
+a:hover {
+ color: red;
+}
+
+a:active {
+  color: slateblue;
+}
+
+
+.img{
+  display: block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 101%;
+}
+
+
+
+.vids{
+  display: block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* top menu for mobile*/
+.topMenu {
+  background-color: lightgray;
+  margin-top: 8px;
+  vertical-align: middle;
+  horizontal-align: middle;
+  width: 98%;
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+
+}
+
+.topMenuItems {
+  vertical-align: middle;
+  color: black;
+  font-size: 14px;
+  border: 1px solid pink;
+  padding: 5px;
+  background: linear-gradient(45deg, rgba(255,249,255,1) 0%, rgba(255,94,130,0.37557603686635943) 100%);
+  width: 15%;
+  border-radius: 25px;
+  font-family: pixel;
+}
+
+
+/* dropdown menu code adapted from W3*/
+.dropbtn {
+
+  color: black;
+  padding:32px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid pink;
+  padding: 15px;
+  background: linear-gradient(45deg, rgba(255,150,255,1) 0%, rgba(255,94,130,0.37557603686635943) 100%);
+
+  position: absolute;
+  right: 7%;
+
+}
+
+.dropdown {
+  display: inline-block;
+  position: absolute;
+  right: 8%;
+  top: 65px;
+  vertical-align: middle;
+  horizontal-align: middle;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  right: -24px;
+  vertical-align: middle;
+  horizontal-align: middle;
+  font-family: pixel;
+  font-size: 20px
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  vertical-align: middle;
+
+}
+
+#image{
+position:absolute;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+footer{
+  background-color: lightgray;
+  border-radius: 25px;
+  border: 1px solid gray;
+  padding: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#textStatus{
+  font-family: basic;
+}
+
+#textSize{
+  font-family: basic;
+}
+
+#currentText{
+  font-family: basic;
+}
+
+
+#when{
+  font-family: basic;
+  font-size: 18px;
+}
+
+#weekd{
+  font-family: basic;
+  font-size: 18px;
+}
