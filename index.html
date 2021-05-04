@@ -52,7 +52,7 @@
     <div>
       <div id="intro">
         <text style="align-text: center;">
-          Sam Hafferty's Portfolio
+          Sam's Page
         </text>
       </div>
       <h1>
@@ -102,42 +102,6 @@
   </main>
 
   <footer>
-          <strong><text id="textSize"> Text Size:</text></strong>
-            <button onclick="smallText()"> Small </button>
-            <script type="text/javascript">
-              function smallText(){
-                //Document Object Model adapted from in class examples.
-                //Here I set up a button to let the user have the text on the page become large or go back to small
-                //this translates html into javaScript to update page content
-                document.getElementById('textStatus').innerHTML = "Small";
-                //this part of the Document Object Model translates CSS into Javascipt
-                document.getElementById("textStatus").style.fontSize = "18px";
-                document.getElementById("weekd").style.fontSize = "18px";
-                document.getElementById("when").style.fontSize = "18px";
-                document.getElementById("currentText").style.fontSize = "18px";
-                document.getElementById("textSize").style.fontSize = "18px";
-                document.getElementById("intro").style.fontSize = "18px";
-              }
-            </script>
-            <button onclick="largeText()"> Large </button>
-            <script type="text/javascript">
-              function largeText(){
-                //translates html into javaScript
-                document.getElementById('textStatus').innerHTML = "Large";
-                //this part of the Document Object Model translates CSS into Javascipt
-                //document.getElementById("all").style.fontSize = "30px";
-                document.getElementById("textStatus").style.fontSize = "30px";
-                document.getElementById("weekd").style.fontSize = "30px";
-                document.getElementById("when").style.fontSize = "30px";
-                document.getElementById("currentText").style.fontSize = "30px";
-                document.getElementById("textSize").style.fontSize = "30px";
-                document.getElementById("intro").style.fontSize = "30px";
-              }
-            </script>
-            <p>
-              <text id="currentText"><strong>Current: </strong></text>
-              <text id=textStatus><em>Small</em></text>
-            </p>
           <!-- displaying the text from the date object-->
             <p>
               <strong><text id="weekd"></text></strong>
