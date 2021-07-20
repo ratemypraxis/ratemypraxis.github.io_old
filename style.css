@@ -50,6 +50,36 @@ header {
   border: 2px dashed gray;
 }
 
+#introSimple {
+  background-color: lightgray;
+  font-size: 38px;
+  color: black;
+  margin-top: 8px;
+  vertical-align: middle;
+    text-align: center;
+  font-family: pixel;
+  width: 98%;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+}
+#bodySimple {
+  background-color: lightgray;
+  font-size: 24px;
+  color: black;
+  margin-top: 8px;
+  vertical-align: middle;
+    text-align: left;
+  font-family: basic;
+  width: 98%;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+}
 
 #linkBod{
   background-image: url("indexBack.jpg");
@@ -244,11 +274,11 @@ p{
 }
 
 a:link {
- color: black;
+ color: rgb(0, 4, 255);
 }
 
 a:visited {
- color: white;
+ color: green;
 }
 a:hover {
  color: red;
