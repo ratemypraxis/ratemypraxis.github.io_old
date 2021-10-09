@@ -124,6 +124,7 @@ border: 2px solid pink;
   -ms-flex: 100%;
   flex: 100%;
   max-width: 100%;
+  align:center;
 }
 
 .box {
@@ -187,6 +188,7 @@ border: 2px solid pink;
   .vids{
     height:644px
     }
+
 
     .topMenu {
       display: none;
