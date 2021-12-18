@@ -4,7 +4,7 @@ var button8;
 
 function setup() {      
   background(255);   
-  button2 = createImg('window.png'); 
+  button2 = createImg('window.gif'); 
   button2.position(135, 165);  
   button2.size(350, 350);  
   button2.mousePressed(closeWin);   
