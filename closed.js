@@ -27,7 +27,7 @@ function preload(){
 }
 
 function closeWin() {     
-  window.open('open.html');
+  window.open('index.html');
   window.close('closed.html');
 }
 
