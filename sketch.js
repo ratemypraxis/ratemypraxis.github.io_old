@@ -1,39 +1,50 @@
-var button;
-var button2;
-var button3;
-var button4;
-let x = 325;
-let y = 1;
-let x2 = 325;
-let y2 = 725;
-let x3 = 749;
-let y3 = 325;
-let x4 = 75;
-let y4 = 445;
-let xspeed = 1;
-let yspeed = 1;
-let x2speed = 1;
-let y2speed = 1;
-let x3speed = 1;
-let y3speed = 1;
-let x4speed = 1;
-let y4speed = 1;
+var pixel;
+var video;
+var sound;
+var contact;
+var code;
+var home;
+var thx;
+let x = -250;
+let y = 200;
+let x2 = -50;
+let y2 = 200;
+let x3 = 150;
+let y3 = 200;
+let x4 = 350;
+let y4 = 200;
+let x5 = 550;
+let y5 = 200;
+let xspeed = 2;
+let yspeed = 2;
+let x2speed = 2;
+let y2speed = 2;
+let x3speed = 2;
+let y3speed = 2;
+let x4speed = 2;
+let y4speed = 2;
+let y5speed = 2;
 let r = 10;
-let changeX;
+//let changeX;
 let changeY;
+let width = 700;
+let height = 500;
 
 
 function setup() {
-  button = createImg('pixelIconBig.png');
-  button2 = createImg('videoIconBig.png');
-  button3 = createImg('soundIconBig.png');
-  button4 = createImg('contactIconBig.png');
+  pixel = createImg('pixelIconBig.png');
+  video = createImg('videoIconBig.png');
+  sound = createImg('soundIconBig.png');
+  contact = createImg('contactIconBig.png');
+  code = createImg('pixelIconBig.png')
+  home = createImg('welcome.gif');
+  thx = createImg('thx.png');
 
-  var canvas = createCanvas(750, 750);
+  var canvas = createCanvas(windowWidth,windowHeight);
       canvas.parent("p5Canvas");
 
   for (let i = 0; i < 4; i++) {
-    changeX = random(-1, 1);
+  //  changeX = random(-1, 1);
     changeY= random(-1, 1);
   }
 }
@@ -42,17 +53,17 @@ function draw() {
 // code for dynamics adapted from the coding train bouncing ball example: https://thecodingtrain.com/beginners/p5js/3.2-bouncing-ball.html
 
   // Add the current speed to the position.
-  x = x - xspeed;
+  y = y - yspeed;
 
-  if ((x > width+r) || (x < r)) {
-    xspeed = xspeed * -1;
+  if ((y > height+r) || (y < r)) {
+    yspeed = yspeed * -1;
   }
 
     // Add the current speed to the position.
-  x2 = x2 + xspeed;
+  y2 = y2 + yspeed;
 
-  if ((x2 < width+r) || (x2 < r)) {
-    x2speed = x2speed * -1;
+  if ((y2 < height+r) || (y2 < r)) {
+    y2speed = y2speed * -1;
   }
 
 
@@ -65,35 +76,56 @@ function draw() {
   }
 
     // Add the current speed to the position.
-  y4 = y4 + y4speed;
+  y4 = y4 + yspeed;
 
-
-  if ((y4 > height+r) || (y4 < r)) {
+  if ((y4 < height+r) || (y4 < r)) {
     y4speed = y4speed * -1;
+  }
+
+  y5 = y5 - y5speed;
+
+
+  if ((y5 > height+r) || (y5 < r)) {
+    y5speed = y5speed * -1;
   }
 
   // Display circle at x position
 
-  button.position(x,y).parent("p5Canvas");
-  button.size(200,200);
-  button.alt = "A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels.";
-  button.mousePressed(openLink);
+  pixel.position(x,y).parent("p5Canvas");
+  pixel.size(200,200);
+  pixel.alt = "A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels.";
+  pixel.mousePressed(openLink);
 
 
-  button2.position(x2,y2).parent("p5Canvas");
-  button2.size(200,200);
-  button2.alt = "A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music.";
-  button2.mousePressed(openLink2);
+  video.position(x2,y2).parent("p5Canvas");
+  video.size(200,200);
+  video.alt = "A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music.";
+  video.mousePressed(openLink2);
 
-   button3.position(x3,y3).parent("p5Canvas");
-  button3.size(200,200);
-  button3.alt = "A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green.";
-  button3.mousePressed(openLink3);
+  sound.position(x3,y3).parent("p5Canvas");
+  sound.size(200,200);
+  sound.alt = "A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green.";
+  sound.mousePressed(openLink3);
 
-  button4.position(x4,y4).parent("p5Canvas");
-  button4.size(200,200);
-  button4.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
-  button4.mousePressed(openLink4);
+  contact.position(x4,y4).parent("p5Canvas");
+  contact.size(200,200);
+  contact.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
+  contact.mousePressed(openLink4);
+
+  code.position(x5,y5).parent("p5Canvas");
+  code.size(200,200);
+  code.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
+  code.mousePressed(openLink4);
+
+  home.position(windowWidth/2,windowHeight/6.5).parent("p5Canvas");
+  home.size(400,400);
+  home.alt = "A small pixel gif of a simple home with a front door opening and closing.";
+  home.mousePressed(openLink5);
+
+  thx.position(-45,windowHeight/1.25).parent("p5Canvas");
+  thx.size(1075,71);
+  thx.alt = "A small pixel gif of a simple home with a front door opening and closing.";
+  thx.mousePressed(openLink5);
 
 }
 
@@ -114,5 +146,10 @@ function openLink3() {
 
 function openLink4() {
   window.open("contact.html","_self");
+
+}
+
+function openLink5() {
+  window.open("open.html","_self");
 
 }
