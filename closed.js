@@ -1,9 +1,15 @@
 var button2;
 var button8;
 
+let mosquito;
+function preload() {
+  soundFormats('mp3');
+  mosquito = loadSound('mosquito.mp3');
+}
 
 function setup() {      
   background(255);   
+
   button2 = createImg('window.gif'); 
   button2.position(135, 165);  
   button2.size(350, 350);  
@@ -12,12 +18,17 @@ function setup() {
   button8 = createImg('closeText.png'); 
   button8.position(170, 135);  
   button8.size(312, 22);  
-  button8.mousePressed(closeWin);   
+  mosquito.play();
+}
+
+function preload(){
+  mosquito = loadSound('mosquito.mp3');
+
 }
 
 function closeWin() {     
   window.open('open.html');
- // window.close('closed.html');
+  window.close('closed.html');
 }
 
 
