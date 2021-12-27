@@ -78,9 +78,14 @@ header {
 
 #linkButton {
 
-border-radius: 25px;
-border: 2px solid pink;
-  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid pink;
+  font-family: basic;
+  font-weight: bolder;
+  padding: 10px;
+  margin-top: 10pt;
+  margin-bottom: 5pt;
+  font-size: 20pt;
   background: linear-gradient(45deg, rgba(255,150,255,1) 0%, rgba(255,94,130,0.37557603686635943) 100%);
 }
 
@@ -135,16 +140,40 @@ border: 2px solid pink;
 
 .box {
   background-color: lightblue;
-  margin-top: 8px;
+  margin-top: 15px;
   align-content: center;
-  width: 98%;
+  margin: auto;
+  width: 99%;
   padding: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-width: 5px;
+  border-width: 2px;
   border-color: purple;
   border: dashed;
 }
+
+#embedBox {
+  background-color: transparent;
+  margin-top: 30px;
+  align-content: center;
+  margin: auto;
+  width: 98%;
+  margin-bottom: 20px;
+
+}
+
+#embed {
+  background-color: transparent;
+  margin-top: 15px;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  border-width: 1px;
+  border-radius: 25px;
+  color: white;
+  border: solid;
+}
+
+
 
 .symbols {
   background-color: trans;
