@@ -36,10 +36,10 @@ function setup() {
   video = createImg('videoIconBig.png');
   sound = createImg('soundIconBig.png');
   contact = createImg('contactIconBig.png');
-  code = createImg('pixelIconBig.png')
+  code = createImg('codeIconBig.png')
   home = createImg('welcome.gif');
   thx = createImg('thx.png');
-
+// thx is name
   var canvas = createCanvas(windowWidth,windowHeight);
       canvas.parent("p5Canvas");
 
@@ -94,7 +94,7 @@ function draw() {
   pixel.position(x,y).parent("p5Canvas");
   pixel.size(200,200);
   pixel.alt = "A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels.";
-  pixel.mousePressed(openLink);
+  pixel.mousePressed(openLink1);
 
 
   video.position(x2,y2).parent("p5Canvas");
@@ -107,29 +107,34 @@ function draw() {
   sound.alt = "A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green.";
   sound.mousePressed(openLink3);
 
-  contact.position(x4,y4).parent("p5Canvas");
+  contact.position(x5,y5).parent("p5Canvas");
   contact.size(200,200);
   contact.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
-  contact.mousePressed(openLink4);
+  contact.mousePressed(openLink5);
 
-  code.position(x5,y5).parent("p5Canvas");
+  code.position(x4,y4).parent("p5Canvas");
   code.size(200,200);
-  code.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
+  code.alt = "A 32-bit image of a pink computer keyboard in front of a blue circle. In the centered foreground green text reads Code.";
   code.mousePressed(openLink4);
 
   home.position(windowWidth/2,windowHeight/6.5).parent("p5Canvas");
   home.size(400,400);
   home.alt = "A small pixel gif of a simple home with a front door opening and closing.";
-  home.mousePressed(openLink5);
+  home.mousePressed(openLink);
 
   thx.position(-45,windowHeight/1.25).parent("p5Canvas");
   thx.size(1075,71);
-  thx.alt = "A small pixel gif of a simple home with a front door opening and closing.";
+  thx.alt = "text in green";
   thx.mousePressed(openLink5);
 
 }
 
 function openLink() {
+  window.open("door.html","_self");
+
+}
+
+function openLink1() {
   window.open("pixelArt.html","_self");
 
 }
@@ -145,11 +150,11 @@ function openLink3() {
 }
 
 function openLink4() {
-  window.open("contact.html","_self");
+  window.open("code.html","_self");
 
 }
 
 function openLink5() {
-  window.open("open.html","_self");
+  window.open("contact.html","_self");
 
 }
