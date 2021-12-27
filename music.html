@@ -66,14 +66,19 @@
     <!-- Header -->
     <header>
       <div class="topMenu">
-        <text>
-          <span class="topMenuItems"><a href="index.html">Home</a></span>
-          <span class="topMenuItems"><a href="pixelArt.html">Pixels</a></span>
-          <span class="topMenuItems"><a href="video.html">Video</a></span>
-          <span class="topMenuItems"><a href="contact.html">About</a></span>
-        </text>
-      </div>
-      <h1><span id="rcorner">Music</span></h1>
+        <button class="topMenuItems" 
+          onclick=" window.open('pixelArt.html','_self')">Pixels</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('video.html','_self')">Video</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('code.html','_self')">Code</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('contact.html','_self')">About</button>
+     </div>
+     <h1>
+      <button id="pageTitle" 
+      onclick=" window.open('index.html','_self')">Music</button>
+    </h1>
       <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
       <div class="dropdown">
         <button class="dropbtn">
@@ -84,6 +89,7 @@
           <a href="index.html">Home</a>
           <a href="pixelArt.html">Pixels</a>
           <a href="video.html">Video</a>
+          <a href="code.html">Code</a>
           <a href="contact.html">About</a>
         </text>
         </div>
@@ -160,7 +166,7 @@
     <h1 style="text-align:center"><span style="background-color: white"><span style="font-family:pixel">Footage of Live Performances</span></span></h1>
     <div class="row">
 
-      <div class="column1">
+      <div class="column1" style="margin: auto;">
         <p>
           <iframe title="Performing as Success Story" class="vids"  width="99%" height="auto" src="https://archive.org/embed/10.06.21_successStory_bartrams" width="auto" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
         </p>

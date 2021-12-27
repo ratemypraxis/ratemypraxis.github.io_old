@@ -65,15 +65,20 @@
     <!-- Header -->
     <header>
       <div class="topMenu">
-        <text>
-          <span class="topMenuItems"><a href="index.html">Home</a></span>
-          <span class="topMenuItems"><a href="music.html">Music</a></span>
-          <span class="topMenuItems"><a href="pixelArt.html">Pixels</a></span>
-          <span class="topMenuItems"><a href="contact.html">About</a></span>
-        </text>
-      </div>
+        <button class="topMenuItems" 
+          onclick=" window.open('music.html','_self')">Music</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('pixelArt.html','_self')">Pixels</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('code.html','_self')">Code</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('contact.html','_self')">About</button>
+     </div>
 
-      <h1><span id="rcorner"><text>Video</span></h1>
+     <h1>
+      <button id="pageTitle" 
+      onclick=" window.open('index.html','_self')">Video</button>
+      </h1>
 
       <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
       <div class="dropdown">
@@ -85,6 +90,7 @@
           <a href="index.html">Home</a>
           <a href="pixelArt.html">Pixel Art</a>
           <a href="music.html">Music</a>
+          <a href="code.html">Code</a>
           <a href="contact.html">About</a>
         </text>
         </div>
