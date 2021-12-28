@@ -130,7 +130,7 @@ function draw() {
 }
 
 function openLink() {
-  window.open("door.html","_self");
+  window.open("open.html","_self");
 
 }
 
