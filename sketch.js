@@ -96,7 +96,6 @@ function draw() {
   pixel.size(200,200);
   pixel.alt = "A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels.";
   pixel.mousePressed(openLink1);
-  pixel.mouseOver(changeCursor);
 
 
 
@@ -104,42 +103,36 @@ function draw() {
   video.size(200,200);
   video.alt = "A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music.";
   video.mousePressed(openLink2);
-  video.mouseOver(changeCursor);
 
 
   sound.position(x3,y3).parent("p5Canvas");
   sound.size(200,200);
   sound.alt = "A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green.";
   sound.mousePressed(openLink3);
-  sound.mouseOver(changeCursor);
 
 
   contact.position(x5,y5).parent("p5Canvas");
   contact.size(200,200);
   contact.alt = "A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About.";
   contact.mousePressed(openLink5);
-  contact.mouseOver(changeCursor);
 
 
   code.position(x4,y4).parent("p5Canvas");
   code.size(200,200);
   code.alt = "A 32-bit image of a pink computer keyboard in front of a blue circle. In the centered foreground green text reads Code.";
   code.mousePressed(openLink4);
-  code.mouseOver(changeCursor);
 
 
   home.position(windowWidth/2,windowHeight/6.5).parent("p5Canvas");
   home.size(400,400);
   home.alt = "A small pixel gif of a simple home with a front door opening and closing.";
   home.mousePressed(openLink);
-  home.mouseOver(changeCursor);
 
 
   thx.position(-45,windowHeight/1.25).parent("p5Canvas");
   thx.size(1075,71);
   thx.alt = "text in green";
   thx.mousePressed(openLink5);
-  thx.mouseOver(changeCursor);
 
 
 
