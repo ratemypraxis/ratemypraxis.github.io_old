@@ -145,13 +145,9 @@ function draw() {
 
 }
 
-function changeCursor(){
-  cursor('rainbowLink.cur');
-}
+
 function openLink() {
   window.open("open.html","_self");
-  
-
 }
 
 function openLink1() {
