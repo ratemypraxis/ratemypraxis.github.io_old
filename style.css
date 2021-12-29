@@ -82,6 +82,8 @@ header {
 
 #linkButton {
 
+  cursor: pointer;
+
   border-radius: 20px;
   border: 2px solid pink;
   font-family: pixel;
@@ -101,6 +103,8 @@ header {
   }
   
   #pageTitle {
+    cursor: pointer;
+
     border-radius: 25px;
     margin-top: 15pt;
     border: 2px solid pink;
@@ -111,6 +115,13 @@ header {
       font-size: 40pt;
       background: linear-gradient(45deg, rgb(85, 17, 85) 0%, rgba(255,94,130,0.5) 100%);
     }
+
+    #embedCode {
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+
+      }
 
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -151,7 +162,6 @@ header {
   -ms-flex: 100%;
   flex: 100%;
   max-width: 100%;
-  align:center;
 }
 
 .box {
@@ -215,7 +225,6 @@ text-align: center;
   margin-top: 2px;
   margin-left: 15%;
   vertical-align: center;
-  horizontal-align: center;
   max-width: 75%;
   padding: 15px;
   border-width: 5px;
@@ -335,15 +344,14 @@ text-align: center;
 
 
 body{
+  cursor: url('rainbow.cur'),default;
+
   font-family: basic;
   font-size: 16px;
   margin: 0;
 
 }
 
-p{
-
-}
 
 a:link {
  color: rgb(0, 4, 255);
@@ -382,6 +390,8 @@ a:active {
 
 /* top menu for mobile*/
 .topMenu {
+  cursor: pointer;
+
   background-color:#9D4078;
   margin-top: 0pt;
   vertical-align: middle;
@@ -409,6 +419,7 @@ a:active {
 
 /* dropdown menu code adapted from W3*/
 .dropbtn {
+  cursor: pointer;
 
   color: black;
   font-size: 16px;
@@ -427,10 +438,11 @@ a:active {
   right: 8%;
   top: 65px;
   vertical-align: middle;
-  horizontal-align: middle;
 }
 
 .dropdown-content {
+  cursor: pointer;
+
   display: none;
   background-color: #85DC88;
   min-width: 120px;
@@ -439,7 +451,6 @@ a:active {
   margin-top: 56pt;
   margin-right: -20px;
   vertical-align: middle;
-  horizontal-align: middle;
   border-radius: 25pt;
   font-size: 20px
 
