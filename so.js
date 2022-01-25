@@ -44,12 +44,12 @@ function onSoundLoadProgress(e){
 }
 function preload() {
  soundFormats('mp3', 'ogg');
- kickSound = loadSound("http://127.0.0.1:5500/kick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- zapSound = loadSound("http://127.0.0.1:5500/fastKick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- clapSound = loadSound("http://127.0.0.1:5500/drop.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- carrotSound = loadSound("http://127.0.0.1:5500/melody1.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- tomatoSound = loadSound("http://127.0.0.1:5500/melody2.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- potatoSound = loadSound("http://127.0.0.1:5500/melody3.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ kickSound = loadSound("https://www.2nd.systems/kick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ zapSound = loadSound("https://www.2nd.systems/fastKick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ clapSound = loadSound("https://www.2nd.systems/drop.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ carrotSound = loadSound("https://www.2nd.systems/melody1.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ tomatoSound = loadSound("https://www.2nd.systems/melody2.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ potatoSound = loadSound("https://www.2nd.systems/melody3.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
 
   
   m1 = loadImage('m1.png');
