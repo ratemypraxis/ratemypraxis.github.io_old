@@ -52,22 +52,22 @@ function preload() {
  potatoSound = loadSound("https://www.2nd.systems/melody3.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
 
   
-  m1 = loadImage('m1.png');
-  m2 = loadImage('m2.png');
-  m3 = loadImage('m3.png');
-  b1 = loadImage('b1.png');
-  b2 = loadImage('b2.png');
-  b3 = loadImage('b3.png');
+  m1 = loadImage('tofu.png');
+  m2 = loadImage('mushroom.png');
+  m3 = loadImage('fishBall.png');
+  b1 = loadImage('chiknBroth.png');
+  b2 = loadImage('veggieBroth.png');
+  b3 = loadImage('mushroomBroth.png');
   v1 = loadImage('carrot.png');
-  v2 = loadImage('v2.png');
-  v3 = loadImage('v3.png');
+  v2 = loadImage('tomato.png');
+  v3 = loadImage('potato.png');
   
 }
 
 function setup() {
-createCanvas(860, 600); 
-  bg = loadImage('soup.jpg');
-    loadImage('soup.jpg', img1 => {
+createCanvas(890, 620); 
+  bg = loadImage('soup.png');
+    loadImage('soup.png', img1 => {
     image(img1, 0, 0);
   });
   
@@ -75,40 +75,40 @@ createCanvas(860, 600);
 reverb = new p5.Reverb();
  distortion = new p5.Distortion();
   
- meat1 = createButton('Add');
-  meat1.position(425, 85);
+ meat1 = createButton('Add Tofu');
+  meat1.position(435, 169);
   meat1.mousePressed(addMeat1);
   
-   meat2 = createButton('Add');
-  meat2.position(595, 85);
+   meat2 = createButton('Add Mushroom');
+  meat2.position(585, 169);
   meat2.mousePressed(addMeat2);
   
-     meat3 = createButton('Add');
-  meat3.position(755, 85);
+     meat3 = createButton('Add Fishball');
+  meat3.position(745, 169);
   meat3.mousePressed(addMeat3);
   
-  veggy1 = createButton('Add');
-  veggy1.position(445, 285);
+  veggy1 = createButton('Add Carrot');
+  veggy1.position(435, 385);
   veggy1.mousePressed(addCarrot);
   
-  veggy2 = createButton('Add');
-  veggy2.position(570, 285);
+  veggy2 = createButton('Add Tomato');
+  veggy2.position(590, 385);
   veggy2.mousePressed(addTomato);
   
-  veggy3 = createButton('Add');
-  veggy3.position(690, 285);
+  veggy3 = createButton('Add Potato');
+  veggy3.position(745, 385);
   veggy3.mousePressed(addPotato);
   
-  broth1 = createButton('Add');
-  broth1.position(455, 565);
+  broth1 = createButton('Add Chikn Broth');
+  broth1.position(415, 580);
   broth1.mousePressed(addChikn);
   
-  broth2 = createButton('Add');
-  broth2.position(595, 565);
+  broth2 = createButton('Add Veggie Broth');
+  broth2.position(575, 580);
   broth2.mousePressed(addVeggie);
   
-  broth3 = createButton('Add');
-  broth3.position(735, 565);
+  broth3 = createButton('Add Mushroom Broth');
+  broth3.position(715, 580);
   broth3.mousePressed(addBrown);
 }
 
@@ -117,7 +117,7 @@ function draw(){
 }
 function addMeat1() {
     kickSound.loop(); 
-    image(m1, 160, 300, 70, 70);
+    image(m1, 155, 300, 70, 70);
 }
 
 function addMeat2() {
@@ -126,27 +126,27 @@ function addMeat2() {
 }
 
 function addMeat3() {
-    zapSound.loop(); 
-  image(m3, 200, 200, 70, 70);
+    clapSound.loop(); 
+  image(m3, 200, 220, 70, 70);
 }
 
 function addCarrot() {
     carrotSound.loop(); 
-  image(v1, 140, 230, 70, 70);
+  image(v1, 120, 220, 100, 100);
 }
 
 function addTomato() {
     potatoSound.loop(); 
-  image(v2, 80, 290);
+  image(v2, 80, 300, 80, 80);
 }
 
 function addPotato() {
     tomatoSound.loop(); 
-  image(v3, 200, 270, 50, 50);
+  image(v3, 200, 290, 100, 100);
 }
 
 function addChikn() {
-  image(b1, 35, 170, 250, 200);
+  image(b1, 1, 1, 885, 640);
   delay.process(carrotSound, .12, .7, 2300);
   delay.process(tomatoSound, .12, .7, 2300);
   delay.process(potatoSound, .12, .7, 2300);
@@ -157,7 +157,7 @@ function addChikn() {
 }
 
 function addVeggie() {
-  image(b2, 35, 170, 250, 200);
+  image(b2, 1, 1, 885, 640);
   reverb.process(carrotSound, .12, .7, 2300);
   reverb.process(tomatoSound, .12, .7, 2300);
   reverb.process(potatoSound, .12, .7, 2300);
@@ -168,7 +168,7 @@ function addVeggie() {
 }
   
 function addBrown() {
-  image(b3, 35, 170, 250, 200);
+  image(b3, 1, 1, 885, 640);
   distortion.process(carrotSound, .12, .7, 2300);
   distortion.process(tomatoSound, .12, .7, 2300);
   distortion.process(potatoSound, .12, .7, 2300);

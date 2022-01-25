@@ -30,7 +30,7 @@ header {
   text-align: center;
   color: #85DC88;
   font-size: 30px;
-  margin-top: 15pt;
+  margin-top: 10pt;
   margin-bottom: 0pt;
 
 }
@@ -50,6 +50,42 @@ header {
   margin-left: 10px;
   margin-right: 10px;
   border: 2px dashed gray;
+}
+
+#souptro {
+  background-color: black;
+  font-size: 25px;
+  color: lightgray;
+  margin-top: 5px;
+  vertical-align: middle;
+    text-align: center;
+  font-family: pixel;
+  width: 58%;
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+  border-radius: 25px;
+}
+
+#moreSoup {
+  background-color: black;
+  cursor: pointer;
+
+  font-size: 25px;
+  color: lightgray;
+  margin-top: 5px;
+  vertical-align: middle;
+    text-align: center;
+  font-family: pixel;
+  width: 12%;
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px dashed gray;
+  border-radius: 25px;
 }
  
 #introSimple {
