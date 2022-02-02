@@ -199,6 +199,16 @@ header {
   max-width: 100%;
 }
 
+.columnL img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+
 .box {
   background-color: lightblue;
   margin-top: 15px;
@@ -208,6 +218,20 @@ header {
   margin: auto;
   width: 99%;
   padding: 35px;
+  border-width: 2px;
+  border-color: purple;
+  border: dashed;
+}
+
+.boxL {
+  background-color: lightblue;
+  margin-top: 15px;
+  align-content: center;
+  justify-content: center;
+  font-family: basic;
+  margin: auto;
+  width: 99%;
+  padding: 5px;
   border-width: 2px;
   border-color: purple;
   border: dashed;
