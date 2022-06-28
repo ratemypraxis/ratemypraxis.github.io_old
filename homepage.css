@@ -6,18 +6,18 @@
 /* font downloaded from dafont.com originally called Arcade Classic and posted by the user Glitch: https://www.dafont.com/arcade-classic.font */
 @font-face {
   font-family: pixelGlitch;
-  src: url(arcadeGlitch.ttf);
+  src: url(fonts/arcadeGlitch.ttf);
 }
 
 /* font downloaded from dafont.com originally called Our Arcade Games and posted by the user Font Bureau: https://www.dafont.com/our-arcade-games.font */
 @font-face {
   font-family: pixel;
-  src: url(arcade.TTF);
+  src: url(fonts/arcade.TTF);
 }
 
 @font-face {
   font-family: basic;
-  src: url(PAPL_.ttf);
+  src: url(fonts/PAPL_.ttf);
 }
 
 header {
@@ -99,7 +99,7 @@ main{
 body{
   font-family: pixel;
   font-size: 16px;
-  background-image: url("indexBack.jpg");
+  background-image: url("images/indexBack.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 

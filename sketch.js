@@ -32,13 +32,13 @@ let height = 500;
 
 
 function setup() {
-  pixel = createImg('pixelIconBig.png');
-  video = createImg('videoIconBig.png');
-  sound = createImg('soundIconBig.png');
-  contact = createImg('contactIconBig.png');
-  code = createImg('codeIconBig.png')
-  home = createImg('welcome.gif');
-  thx = createImg('thx.png');
+  pixel = createImg('images/pixelIconBig.png');
+  video = createImg('images/videoIconBig.png');
+  sound = createImg('images/soundIconBig.png');
+  contact = createImg('images/contactIconBig.png');
+  code = createImg('images/codeIconBig.png')
+  home = createImg('images/welcome.gif');
+  thx = createImg('images/thx.png');
 // thx is name
   var canvas = createCanvas(windowWidth,windowHeight);
       canvas.parent("p5Canvas");
@@ -51,7 +51,7 @@ function setup() {
 
 function draw() {
 
-  cursor('rainbow.cur');
+  cursor('cursors/rainbow.cur');
 // code for dynamics adapted from the coding train bouncing ball example: https://thecodingtrain.com/beginners/p5js/3.2-bouncing-ball.html
 
   // Add the current speed to the position.

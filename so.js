@@ -44,30 +44,30 @@ function onSoundLoadProgress(e){
 }
 function preload() {
  soundFormats('mp3', 'ogg');
- kickSound = loadSound("https://www.2nd.systems/kick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- zapSound = loadSound("https://www.2nd.systems/fastKick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- clapSound = loadSound("https://www.2nd.systems/drop.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- carrotSound = loadSound("https://www.2nd.systems/melody1.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- tomatoSound = loadSound("https://www.2nd.systems/melody2.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
- potatoSound = loadSound("https://www.2nd.systems/melody3.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ kickSound = loadSound("audio/kick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ zapSound = loadSound("audio/fastKick.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ clapSound = loadSound("audio/drop.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ carrotSound = loadSound("audio/melody1.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ tomatoSound = loadSound("audio/melody2.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
+ potatoSound = loadSound("audio/melody3.mp3",onSoundLoadSuccess,onSoundLoadError,onSoundLoadProgress);
 
   
-  m1 = loadImage('tofu.png');
-  m2 = loadImage('mushroom.png');
-  m3 = loadImage('fishBall.png');
-  b1 = loadImage('chiknBroth.png');
-  b2 = loadImage('veggieBroth.png');
-  b3 = loadImage('mushroomBroth.png');
-  v1 = loadImage('carrot.png');
-  v2 = loadImage('tomato.png');
-  v3 = loadImage('potato.png');
+  m1 = loadImage('images/tofu.png');
+  m2 = loadImage('images/mushroom.png');
+  m3 = loadImage('images/fishBall.png');
+  b1 = loadImage('images/chiknBroth.png');
+  b2 = loadImage('images/veggieBroth.png');
+  b3 = loadImage('images/mushroomBroth.png');
+  v1 = loadImage('images/carrot.png');
+  v2 = loadImage('images/tomato.png');
+  v3 = loadImage('images/potato.png');
   
 }
 
 function setup() {
 createCanvas(890, 620); 
-  bg = loadImage('soup.png');
-    loadImage('soup.png', img1 => {
+  bg = loadImage('images/soup.png');
+    loadImage('images/soup.png', img1 => {
     image(img1, 0, 0);
   });
   
