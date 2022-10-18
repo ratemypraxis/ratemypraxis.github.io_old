@@ -17,8 +17,8 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   //light switch starting size and location
-  w = 30;
-  h = 40;
+  w = 60;
+  h = 80;
   x = random(width - width / 1.1, width / 1.1);
   y = random(height / 1.1, height - height / 1.4);
   textFont(myFont);
@@ -32,7 +32,7 @@ function draw() {
     //light switch flipping animation through stroke weight and color
     sOn = "black";
     sOff = "gray";
-    swOn = 3;
+    swOn = 6;
     swOff = 0;
     //message text change and color change
     tf = "black";
@@ -42,7 +42,7 @@ function draw() {
     sOn = "gray";
     sOff = "black";
     swOn = 0;
-    swOff = 3;
+    swOff = 6;
     tf = "grey";
   }
 
@@ -105,7 +105,6 @@ function draw() {
   textSize(64);
   text("Wednesday Novermber 23rd at 8pm", width / 2, height - height / 3.45);
   text("at Club Ligma Bar & Grille (Greenpoint)", width / 2, height - height / 4);
-  textSize(32);
   text("ask a sim for more info", width / 2, height - height / 4.75);
 
   //switch on/off state
