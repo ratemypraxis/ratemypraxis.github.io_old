@@ -49,7 +49,7 @@ function draw() {
   //spotlight attached to mouse
   noStroke();
   fill("gray");
-  ellipse(mouseX, mouseY, 150, 150);
+  ellipse(mouseX, mouseY, 300, 300);
 
   //highlight around light switch
   strokeWeight(3);
@@ -74,7 +74,7 @@ function draw() {
   noStroke();
   fill("black");
   textAlign(CENTER);
-  textSize(32);
+  textSize(64);
   text("reCAPTCHA DVD Album Release", width / 2, height - height / 1.1);
 
 
@@ -82,27 +82,27 @@ function draw() {
   noStroke();
   fill("rgb(0,0,0)");
   textAlign(CENTER);
-  textSize(32);
+  textSize(64);
   text("SoLow", width / 2, height - height / 1.2);
-  textSize(25);
+  textSize(50);
   text("Afterlife.Online + Magpie", width / 2, height - height / 1.25);
-  textSize(32);
+  textSize(64);
   text("Camp Rock", width / 2, height - height / 1.4);
-  textSize(25);
+  textSize(50);
   text("Mercury Symbol + Soless Dialtone", width / 2, height - height / 1.475);
-  textSize(32);
+  textSize(64);
   text("starloop", width / 2, height - height / 1.7);
-  textSize(25);
+  textSize(50);
   text("Kate Williams + Cal Fish", width / 2, height - height / 1.795);
-  textSize(32);
+  textSize(64);
   text("reCAPTCHA", width / 2, height - height / 2.12);
-  textSize(25);
+  textSize(50);
   text("Syd Miller + Sim Hahahah", width / 2, height - height / 2.25);
-  textSize(32);
+  textSize(64);
   text("PUSHPIN (DJ)", width / 2, height - height / 2.7);
 
   //info
-  textSize(32);
+  textSize(64);
   text("Wednesday Novermber 23rd at 8pm", width / 2, height - height / 3.45);
   text("at Club Ligma Bar & Grille (Greenpoint)", width / 2, height - height / 4);
   textSize(32);
