@@ -77,7 +77,12 @@ function draw() {
   textSize(64);
   text("reCAPTCHA DVD Album Release", width / 2, height - height / 1.1);
 
-
+  //instruct
+  textSize(64);
+  fill("grey");
+  text("Find the switch for info", width / 2, height - height / 2);
+  text("Mobile users tap and drag", width / 2, height - height / 2.2);
+    
   //lineup
   noStroke();
   fill("rgb(0,0,0)");
