@@ -49,7 +49,7 @@ function draw() {
   //spotlight attached to mouse
   noStroke();
   fill("gray");
-  ellipse(mouseX, mouseY, 100, 100);
+  ellipse(mouseX, mouseY, 150, 150);
 
   //highlight around light switch
   strokeWeight(3);
