@@ -104,7 +104,7 @@ function draw() {
   //info
   textSize(64);
   text("Wednesday Novermber 23rd at 8pm", width / 2, height - height / 3.45);
-  text("at Club Ligma Bar & Grille (Greenpoint)", width / 2, height - height / 4);
+  text("at Club Ligma Bar & Grille", width / 2, height - height / 4);
   text("ask a sim for more info", width / 2, height - height / 4.75);
 
   //switch on/off state
