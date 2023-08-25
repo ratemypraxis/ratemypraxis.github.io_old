@@ -8,6 +8,37 @@
     <title>Code</title>
 
     <link rel="stylesheet" href ="style.css">
+    <style>
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+</style>
   </head>
   <!-- date object code built from an example and notes by Professor Sofy Yuditskaya -->
   <!-- using the date object to get the day of the week then changing the page background color to a different shade of purple each day -->
@@ -148,7 +179,17 @@
                         A text generator built on Python using Markovify, Shakespeare's sonnets, and an archive of Pitbull lyrics. Pushed to web with Flask and Heroku.
                     </p>
 <!--                     <iframe src="https://pitbullsonnet-app.herokuapp.com/" width="100%" height="700" style="text-align: center;" style="border:none;"></iframe> -->
-                                <img class="img" src="images/ps1.png" alt="Screenshot of a webpage with a poem" style="width:100%;">
+                  <div class="carousel-container">
+  <div class="carousel">
+    <img src="images/ps1.png" alt="Image 1">
+    <img src="images/p2.png" alt="Image 2">
+    <img src="images/p3.png" alt="Image 3">
+    <img src="images/p4.png" alt="Image 4">
+  </div>
+  <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
+  <div class="arrow next" onclick="nextSlide()">&#10095;</div>
+</div>
+<!--                                 <img class="img" src="images/ps1.png" alt="Screenshot of a webpage with a poem" style="width:100%;"> -->
               </div>
             </div>
             <div class="columnV">
@@ -185,7 +226,28 @@
               hoverImage.style.display = 'none';
             });
             </script>
+<script>
+const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
 
+let currentIndex = 0;
+
+function showSlide(index) {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showSlide(currentIndex);
+}
+
+showSlide(currentIndex);
+</script>
   
           <script>
             function bigImg(x) {
