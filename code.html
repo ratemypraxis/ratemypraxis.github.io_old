@@ -103,13 +103,17 @@
                 <div class="codeBox">
                     <span id="boxTitle">
                         <p>
-                            PITBULL'S SONNETS
+                            Papernet
                         </p>
                     </span>
                     <p style="text-align: center;">
-                        A text generator built on Python using Markovify, Shakespeare's sonnets, and an archive Pitbull (modern-day pop star) lyrics. Pushed to web with Flask and Heroku.
+                        A small network between users around the world and a single thermal printer in NYC. Users send text messages directly to the printer via a self-hosted https webpage on a Raspberry Pi 3 Model B. Printed messages are then immediatley shredded by a mechanical paper shredder a few inches below.
                     </p>
-                    <iframe src="https://pitbullsonnet-app.herokuapp.com/" width="100%" height="700" style="text-align: center;" style="border:none;"></iframe>
+                              <picture id="image-container">
+            
+              <img class="img" id="default-image" src="papernet.jpg" alt="Default Image" style="width:100%;">
+            </picture>
+<!--                     <iframe src="https://pitbullsonnet-app.herokuapp.com/" width="100%" height="700" style="text-align: center;" style="border:none;"></iframe> -->
               </div>
             </div>
             <div class="columnV">
@@ -123,7 +127,27 @@
                     <a class="twitter-timeline" data-height="700" data-theme="dark" href="https://twitter.com/BotSermon?ref_src=twsrc%5Etfw">Tweets by BotSermon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                 </div>
             </div>
 
-
+            <script>
+            const imageContainer = document.getElementById('image-container');
+            const defaultImage = document.getElementById('default-image');
+            
+            const hoverImage = new Image();
+            hoverImage.src = 'images/papernetDemo.gif';
+            hoverImage.alt = 'Hover Image';
+            hoverImage.style.display = 'none';
+            
+            imageContainer.appendChild(hoverImage);
+            
+            imageContainer.addEventListener('mouseenter', () => {
+              defaultImage.style.display = 'none';
+              hoverImage.style.display = 'inline-block';
+            });
+            
+            imageContainer.addEventListener('mouseleave', () => {
+              defaultImage.style.display = 'inline-block';
+              hoverImage.style.display = 'none';
+            });
+            </script>
 
   
           <script>
