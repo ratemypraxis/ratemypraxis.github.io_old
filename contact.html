@@ -43,6 +43,7 @@
       weekday2[6] = "#4345b6";
       var hours = d.getHours();
       var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
 
 var ampm = hours >= 12 ? 'PM' : 'AM';
 
@@ -50,7 +51,7 @@ var ampm = hours >= 12 ? 'PM' : 'AM';
 hours = hours % 12;
 hours = hours ? hours : 12; // Handle midnight (0:00)
 
-var clock = hours + ":" + (minutes < 10 ? '0' : '') + minutes + ' ' + ampm;
+var clock = hours + ":" + (minutes < 10 ? '0' : '') + minutes + ":" + seconds + ' ' + ampm;
 
       var days = weekday[d.getDay()];
       var days2 = weekday2[d.getDay()];
@@ -111,13 +112,13 @@ var clock = hours + ":" + (minutes < 10 ? '0' : '') + minutes + ' ' + ampm;
                   email: <a href="mailto:samhafferty@nyu.edu" target="_blank">samhafferty@nyu.edu</a> 
                 </p>
                 <p>
-                  social media: <a rel="me" href="https://post.lurk.org/@sim">Mastodon</a>, <a rel="me" href="https://www.instagram.com/2nd.systems">Instagram</a>,<a rel="me"href="https://www.linkedin.com/in/ratemypraxis/">LinkedIn</a>
+                  social media: <a rel="me" href="https://www.instagram.com/2nd.systems">Instagram</a>,<a rel="me"href="https://www.linkedin.com/in/ratemypraxis/">LinkedIn</a>, <a rel="me" href="https://post.lurk.org/@sim">Mastodon</a>
             </p>
 
               <p><strong>About</strong></p>
               <p>
-               Hi there, thanks for stopping by this page! I'm currently a graduate student in my final semester of study & practice at
-               the Interactive Telecommunications program in Brooklyn. I'm working on a thesis concerned with intervening to make evident automated surveillance instrastructure which surrounds public life. I've posted some recent projects on <a href="https://www.instagram.com/2nd.systems">social media</a>. You may view my resume <a href="texts/haffertyResume.pdf" target="_blank">here</a> if you'd like. 
+               Hi there, thanks for stopping by my site! I'm currently a graduate student in my final semester of study & practice at
+               the Interactive Telecommunications program in Brooklyn. For my thesis I am designing a speculative notification system which is triggered by geolocational data of automated surveillance instrastructure which surrounds public life. You may view my resume <a href="texts/haffertyResume.pdf" target="_blank">here</a> if you'd like. 
               
               </p>
 
@@ -135,8 +136,8 @@ var clock = hours + ":" + (minutes < 10 ? '0' : '') + minutes + ' ' + ampm;
     </main>
     <footer>
           <p> Thanks for visiting my page on this lovely
-          <strong><text id="weekd"></text></strong> at
-          <strong><text id="when"></text></strong>
+          <text id="weekd"></text> at
+          <text id="when"></text>
         </footer>
     </body>
   </html>
