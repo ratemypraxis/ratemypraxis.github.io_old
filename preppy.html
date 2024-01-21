@@ -111,7 +111,7 @@
     <div id="popup-container"><button id="popup-button" onclick="startAnimation()"><pre>I’m Prepared</pre></button></div>
 
     <div id="video-container">
-        <iframe id="video" src="https://www.youtube.com/embed/xh1YTnYuNLA?playlist=xh1YTnYuNLA&loop=1" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/xh1YTnYuNLA?playlist=xh1YTnYuNLA&loop=1&autoplay=1" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div id="doc-container">
@@ -335,7 +335,6 @@ also
     <script>
         function startAnimation() {
             document.getElementById('popup-container').style.display = 'none';
-            document.getElementById('video').src += '&autoplay=1'; // Autoplay the video
             document.getElementById('doc').style.animation = 'scrollAnimation 240s linear infinite'; // Add animation dynamically
             }
 
