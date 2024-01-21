@@ -14,6 +14,7 @@
             overflow: hidden;
         }
 
+
         #video-container {
             width: 100%;
             height: 50vh;
@@ -42,7 +43,6 @@
             word-wrap: break-word;
             padding: 40px;
             box-sizing: border-box;
-            animation: scrollAnimation 240s linear infinite;
         }
 
         #spacer {
@@ -54,13 +54,11 @@
             display: none;
             position: fixed;
             top: 45%;
-            left: 45%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #ffffff;
+            background-color:rgba(47, 47, 47, 0.9);
             border: 1px solid #000000;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 100%;
             z-index: 1000;
         }
 
@@ -68,23 +66,26 @@
             background-color: black;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 5px 20px;
+            opacity: 1;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
+            font-size: 26px;
+            border-radius: 15px;
             cursor: pointer;
         }
+    
 
         @media (min-width: 600px) {
             #video-container {
-                width: 45%;
+                width: 50%;
                 height: 100vh;
             }
+            
 
             #doc-container {
-                width: calc(55% - 40px);
+                width: calc(50% - 40px);
                 height: 100vh;
             }
 
@@ -107,13 +108,10 @@
     </style>
 </head>
 <body>
-
-    <div id="popup-container">
-        <button id="popup-button" onclick="startAnimation()">I'm Prepared</button>
-    </div>
+    <div id="popup-container"><button id="popup-button" onclick="startAnimation()"><pre>I’m Prepared</pre></button></div>
 
     <div id="video-container">
-        <iframe id="video" src="https://www.youtube.com/embed/xh1YTnYuNLA?playlist=xh1YTnYuNLA&loop=1&autoplay=1" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/xh1YTnYuNLA?playlist=xh1YTnYuNLA&loop=1&disablekb=1" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div id="doc-container">
@@ -335,14 +333,12 @@ also
 
 
     <script>
-        // Function to start the animation and hide the popup
         function startAnimation() {
             document.getElementById('popup-container').style.display = 'none';
             document.getElementById('video').src += '&autoplay=1'; // Autoplay the video
-            document.getElementById('doc').style.animationPlayState = 'running'; // Start the animation
-        }
+            document.getElementById('doc').style.animation = 'scrollAnimation 240s linear infinite'; // Add animation dynamically
+            }
 
-        // Show the popup on page load
         document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('popup-container').style.display = 'block';
         });
