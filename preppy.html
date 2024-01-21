@@ -103,7 +103,7 @@
             padding: 15px 40px;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+            z-index: 10000;
         }
 
         #info-content {
@@ -445,14 +445,20 @@ also
         function showPopup() {
     document.getElementById('info-popup').style.display = 'block';
     document.getElementById('video').pause(); // Pause the video
-            document.getElementById('doc').style.animationPlayState = 'paused'; // Pause the document animation
+    document.getElementById('doc').style.animationPlayState = 'paused'; // Pause the document animation
+    document.getElementById('dimmer').style.display = 'block';
+    document.getElementById('enter-btn').style.display = 'none';
+
 
   }
 
   function closePopup() {
     document.getElementById('info-popup').style.display = 'none';
     document.getElementById('video').play(); // Resume the video
-            document.getElementById('doc').style.animationPlayState = 'running'; // Resume the document animation
+    document.getElementById('doc').style.animationPlayState = 'running'; // Resume the document animation
+    document.getElementById('dimmer').style.display = 'none';
+    document.getElementById('enter-btn').style.display = 'none';
+
 
   }
 
