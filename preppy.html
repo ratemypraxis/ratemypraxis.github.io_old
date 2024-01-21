@@ -335,6 +335,7 @@ also
     <script>
         function startAnimation() {
             document.getElementById('popup-container').style.display = 'none';
+            document.getElementById('video').src += '&autoplay=1'; // Autoplay the video
             document.getElementById('doc').style.animation = 'scrollAnimation 240s linear infinite'; // Add animation dynamically
             }
 
