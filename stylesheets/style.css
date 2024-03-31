@@ -117,12 +117,6 @@ p {
   cursor: url('../cursors/redLink.cur'), default;
 }
 
-/* #embedCode {
-  margin: auto;
-  justify-content: center;
-  align-content: center;
-} */
-
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -153,17 +147,6 @@ p {
   cursor: url('../cursors/red.cur'), default;
 
 }
-
-
-/* .column1 img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  padding: 15px;
-  -ms-flex: 100%;
-  flex: 100%;
-  max-width: 100%;
-} */
 
 .columnL img {
   margin-top: 15px;
@@ -223,32 +206,6 @@ p {
   text-align: center;
   cursor: url('../cursors/redTextSel.cur'), default;
 }
-
-/* #embedBox {
-  background-color: transparent;
-  margin-top: 30px;
-  align-content: center;
-  margin: auto;
-  width: 98%;
-  margin-bottom: 20px;
-  cursor: url('../cursors/red.cur'), default;
-} */
-
-/* #embed {
-  background-color: transparent;
-  margin-top: 15px;
-  align-content: center;
-  margin: auto;
-  width: 100%;
-  padding: 0px;
-  border-width: 1px;
-  border-radius: 25px;
-  color: white;
-  border: solid;
-  cursor: url('../cursors/redLink.cur'), default;
-} */
-
-
 
 .symbols {
   background-color: trans;
@@ -453,14 +410,6 @@ p {
   margin-top: 1px;
 
 }
-
-#textStatus,
-#currentText,
-#textSize {
-  font-family: basic;
-  font-size: 18px;
-}
-
 
 body {
   font-family: basic;
