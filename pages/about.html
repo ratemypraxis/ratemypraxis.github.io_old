@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/contactIcon.png" sizes="32x32">
+
+  <title>Info</title>
+
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="../scripts/clock.js"></script>
+</head>
+
+<body id="bod" onload="refreshTheClock()">
+  <script src="../scripts/textSize.js"></script>
+
+  <header>
+    <div class="topMenu">
+      <button class="topMenuItems" onclick=" window.open('music.html','_self')">Music</button>
+      <button class="topMenuItems" onclick=" window.open('video.html','_self')">Video</button>
+      <button class="topMenuItems" onclick=" window.open('code.html','_self')">Code</button>
+      <button class="topMenuItems" onclick=" window.open('pixels.html','_self')">Pixels</button>
+    </div>
+    <h1>
+      <button id="pageTitle" onclick=" window.open('../index.html','_self')">About</button>
+    </h1>
+
+    <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <IMG SRC="../images/menuIcon.svg"
+          ALT="Three black lines parallel on the horizontal axis symbolic of a menu button.">
+      </button>
+      <div class="dropdown-content">
+        <text style="font-size: 20px">
+          <a href="../index.html">Home</a>
+          <a href="pixels.html">Pixels</a>
+          <a href="music.html">Music</a>
+          <a href="code.html">Code</a>
+          <a href="video.html">Video</a>
+        </text>
+      </div>
+    </div>
+
+  </header>
+
+  <main id="all">
+    <div class="flexContainer">
+      <div class="flexLeft">
+        <div id="about" style="align-content: middle;">
+          <p><strong>Connect</strong></p>
+          <p>
+            email: <a href="mailto:samhafferty@nyu.edu" target="_blank">samhafferty@nyu.edu</a>
+          </p>
+          <p>
+            mastodon: <a rel="me" href="https://post.lurk.org/@sim">@sim@post.lurk.org</a>
+          </p>
+
+          <p><strong>About</strong></p>
+          <p>
+            Hi there, thanks for stopping by my site! I'm currently a graduate student in my final semester of study &
+            practice at
+            the Interactive Telecommunications Program (ITP) in Brooklyn where I am expected to earn a Master of
+            Professional
+            Studies this May 2024.
+            For my thesis I am designing an alert system and tool which is powered by network sensing of
+            automated surveillance infrastructure in public, specifically Brooklyn. You may view my resume <a
+              href="../texts/simCV.pdf" target="_blank">here</a> if you'd like.
+          </p>
+        </div>
+      </div>
+      <div class="flexRight">
+        <div>
+          <picture>
+            <img width="100%" src="../images/aboutPic.png"
+              alt="close-up of a person with chin-length curly black hair, pentagonal black wireframe eyeglasses and light brown skin smiling. They are wearing a fairly wrinkled dark brown collared button up shirt.">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>
+      Thanks for visiting my page on this lovely
+      <text id="weekd"></text>
+      <text id="when"></text>!
+    </p>
+    <p>
+      <strong><text id="textSize"> Text Size:</text></strong>
+      <button onclick="smallText()"> Small </button>
+      <button onclick="largeText()"> Large </button>
+
+      <strong><span id="currentText"> | Current = </span></strong>
+      <span id=textStatus>Small</span>
+    </p>
+  </footer>
+</body>
+
+</html>

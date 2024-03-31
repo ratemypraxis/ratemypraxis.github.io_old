@@ -1,0 +1,235 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* font downloaded from dafont.com originally called Our Arcade Games and posted by the user Font Bureau: https://www.dafont.com/our-arcade-games.font */
+@font-face {
+  font-family: pixel;
+  src: url(../fonts/arcade.TTF);
+}
+
+@font-face {
+  font-family: basic;
+  src: url(../fonts/PAPL_.ttf);
+}
+
+@font-face {
+  font-family: ocr;
+  src: url(../fonts/OCRAEXT.TTF);
+}
+
+header {
+  padding: 5px;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  cursor: url('../cursors/red.cur'), default;
+
+}
+
+p{
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+button{
+  cursor: url('../cursors/redLink.cur'), default;
+
+}
+
+h1 {
+  font-size: 22px;
+}
+
+/* tagline for mobile*/
+#intro {
+  background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
+  font-size: 18px;
+  margin-top: 15px;
+  vertical-align: middle;
+    text-align: center;
+  font-family: ocr;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10pt;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* border: 2px solid #7EE77B; */
+  border-radius: 35px;
+}
+
+#p5Canvas{
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  margin-right: 1%;
+  position: relative;
+  right: 30%;
+  max-width: 50%;
+  z-index: 100;
+  cursor: url('../cursors/redLink.cur'), default;
+
+}
+
+#welcome{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 50%;
+  position: relative;
+  left: 38%;
+  top: 35%;
+  max-width: 100%;
+  z-index: -100;
+  cursor: url('../cursors/red.cur'), default;
+
+}
+
+#rcorner {
+border-radius: 25px;
+border: 2px solid pink;
+  padding: 20px;
+  background: linear-gradient(45deg, rgb(85, 17, 85) 0%, rgba(255,94,130,0.5) 100%);
+}
+
+#pageTitle {
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 15pt;
+  border: 2px solid pink;
+  text-align: center;
+  color: lightblue;
+  font-family: pixel;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 15px;
+    font-size: 40pt;
+    background: linear-gradient(45deg, rgb(85, 17, 85) 0%, rgba(255,94,130,0.5) 100%);
+    cursor: url('../cursors/red.cur'), default;
+
+  }
+  
+
+main{
+  font-family: pixel;
+  font-size: 18px;
+  margin-top: 1px;
+  cursor: url('../cursors/red.cur'), default;
+
+}
+
+body{
+  cursor: url('../cursors/red.cur'), default;
+  font-family: pixel;
+  font-size: 16px;
+  background-image: url("../images/indexBack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p{
+  font-size: 18px;
+}
+
+a:link {
+ color: #0C4170;
+}
+
+a:visited {
+ color: #5a2792;
+}
+a:hover {
+ color: #700C0E;
+}
+
+a:active {
+  color: #256017;
+}
+
+.img{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 101%;
+  height: auto;
+  cursor: url('../cursors/redLink.cur'), default;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 1200px) {
+  .column {
+    display: none;
+  }
+
+    header{
+  display: none;
+  }
+
+  footer{
+    display: none;
+  }
+  body{
+    cursor: url('../cursors/red.cur'), default;
+
+    overflow: hidden;
+  }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+
+  }
+
+  #p5Canvas {
+    display: none;
+  }
+
+  body{
+    background-image: url("../images/grid.jpg");
+
+  }
+
+}
+
+ footer{
+  background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
+   font-family: ocr;
+   border-radius: 35px;
+   border: 1px solid gray;
+   padding: 20px;
+   padding: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   margin-top: 15px;
+   text-align: center;
+ }
+
+ #textStatus{
+   font-family: basic;
+ }
+
+ #textSize{
+   font-family: basic;
+ }
+
+ #currentText{
+   font-family: basic;
+ }
+
+
+ #when{
+   font-family: basic;
+   font-size: 18px;
+ }
+
+ #weekd{
+   font-family: basic;
+   font-size: 18px;
+ }

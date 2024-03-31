@@ -1,120 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- icon -->
-    <link rel="icon" type="image/png" href="images/homeIcon.png" sizes="32x32">
-    <title>2nd</title>
-    <script src="p5/p5.min.js"></script>
-    <script src="p5/p5.dom.min.js"></script>
-    <script language="javascript" type="text/javascript" src="p5/p5.dom.js"></script>
-    <script type="text/javascript" src="sketch.js"></script>
-    <link rel="stylesheet" href ="homepage.css">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/homeIcon.png" sizes="32x32">
+  <title>2nd</title>
+  <script src="p5/p5.min.js"></script>
+  <script src="p5/p5.dom.min.js"></script>
+  <script language="javascript" type="text/javascript" src="p5/p5.dom.js"></script>
+  <script type="text/javascript" src="scripts/sketch.js"></script>
+  <script src="scripts/clock.js"></script>
+  <script src="scripts/textSize.js"></script>
+  <link rel="stylesheet" href="stylesheets/homepage.css">
+</head>
 
 <!-- date object code built from an example and notes by Professor Sofy Yuditskaya -->
 <!-- more relevant in other pages of the site but used here to get and display the date and time in the footer -->
-  <body onload ="refreshTheClock()">
-    <script type="text/javascript">
-      function refreshTheClock(){
-        var refreshInterval=1000; // Refresh rate in milli seconds
-        var mytime=setTimeout('clockDisplay()',refreshInterval);
-      }
-      //clockDisplay() is the function that displays the clock as we developed it in class
-      function clockDisplay(){
-        // new instance of the date object
-        // and passing that object's info into a variable I am calling "d"
-        var d = new Date();
-        var weekday = new Array(7);
-        var weekday2 = new Array(7);
-        weekday[0] = "Sunday";
-        weekday[1] = "Monday";
-        weekday[2] = "Tuesday";
-        weekday[3] = "Wednesday";
-        weekday[4] = "Thursday";
-        weekday[5] = "Friday";
-        weekday[6] = "Saturday";
-        var hours = d.getHours();
-        var minutes = d.getMinutes();
-        var seconds = d.getSeconds();
-        var days = d.getDay();
-        // a variable I called "clock" that contains the concatenation of text and number variables
-        var clock = " at " + hours + ":" + minutes + ":" + seconds + " EDT/EST";
-        document.getElementById("weekd").innerHTML = days;
-        document.getElementById("when").innerHTML = clock;
-        //document.getElementById("weekd").innerHTML = week;
-        //after we write the current time into the element with "demo" ID, we run refreshTheClock();
-        refreshTheClock();
-        }
-    </script>
+
+<body onload="refreshTheClock()">
+
   <header>
     <div>
       <div id="intro">
-        <text style="text-align: center;">
-          Sam Hafferty's Page
-        </text>
+          <h1>Sim/Sam Hafferty's Page</h1>
       </div>
-      <h1>
+      <!-- <h1>
         <span id="pageTitle">Welcome</span>
-      </h1>
+      </h1> -->
     </div>
   </header>
 
   <main>
-<!-- placing the P5 sketch canvas in a div by an ID that it's parented to -->
-  <div class="columnH" id="p5Canvas">
-  </div>
-  <div class="columnH">
+    <!-- placing the P5 sketch canvas in a div by an ID that it's parented to -->
+    <div class="columnH" id="p5Canvas">
+    </div>
+    <div class="columnH">
 
-  </div>
+    </div>
 
-<!-- single column layout for mobile and smaller browsers-->
-      <div class="column">
-<!-- 2x sized versions of rasterized images for larger screens using the srcset attribute-->
-          <a href="pixelArt.html">
-              <source media="(max-width:1250px)" srcset="images/pixelIcon.png" alt="A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels." style="width:100%;">
-              <source media="(min-width:1250px)" srcset="images/pixelIconBig.png" alt="A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels." style="width:100%;">
-              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/pixelIconBig.png" alt="A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels." style="width:100%;">
-          </a>
-          <a href="music.html">
-                <source media="(max-width:1250px)" srcset="images/soundIcon.png" alt="A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music." style="width:100%;">
-                <source media="(min-width:1250px)" srcset="images/soundIconBig.png" alt="A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music." style="width:100%;">
-                <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/soundIconBig.png" alt="A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music." style="width:100%;">
-          </a>
-          <a href="video.html">
-              <source media="(max-width:1250px)" srcset="images/videoIcon.png" alt="A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green." style="width:100%;">
-              <source media="(min-width:1250px)" srcset="images/videoIconBig.png" alt="A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green." style="width:100%;">
-              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/videoIconBig.png" alt="A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green." style="width:100%;">
-          </a>
-          <a href="code.html">
-            <source media="(max-width:1250px)" srcset="images/codeIcon.png" alt="A 32-bit pixel rendition of a pink computer keyboard. Green text centered in the foreground reads Code." style="width:100%;">
-            <source media="(min-width:1250px)" srcset="images/codeIconBig.png" alt="A 32-bit pixel rendition of a pink computer keyboard. Green text centered in the foreground reads Code." style="width:100%;">
-            <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/codeIconBig.png" alt="A 32-bit pixel rendition of a canvas featuring a pink computer keyboard. Green text centered in the foreground reads Code." style="width:100%;">
-        </a>
-          <a href="contact.html">
-              <source media="(max-width:1250px)" srcset="images/contactIcon.png" alt="A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About." style="width:100%;">
-              <source media="(min-width:1250px)" srcset="images/contactIconBig.png" alt="A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About." style="width:100%;">
-              <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/contactIconBig.png" alt="A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About." style="width:100%;">
-        </a>
-      </div>
-      <!-- makes image slightly bigger when mouse if over it-->
-      <script>
-        function bigImg(x) {
-            x.style.width = "100%";
-        }
-        function smallImg(x) {
-            x.style.width = "98%";
-        }
-      </script>
+    <!-- single column layout for mobile and smaller browsers-->
+    <div class="column">
+      <!-- 2x sized versions of rasterized images for larger screens using the srcset attribute-->
+      <a href="pages/pixels.html">
+        <img class="img" src="images/pixelIconBig.png"
+          alt="A 32-bit pixel rendition of a canvas featuring a pink painted heart symbol. Green text centered in the foreground reads Pixels."
+          style="width:100%;">
+      </a>
+      <a href="pages/music.html">
+        <img class="img" src="images/soundIconBig.png"
+          alt="A 32-bit drawing of a pink double music note on top of a blue circle, in the centered foreground green text reads Music."
+          style="width:100%;">
+      </a>
+      <a href="pages/video.html">
+        <img class="img" src="images/videoIconBig.png"
+          alt="A 32-bit pixel rendition of a pink anteanna television set with the text Video in the centered foreground in green."
+          style="width:100%;">
+      </a>
+      <a href="pages/code.html">
+        <img class="img" src="images/codeIconBig.png"
+          alt="A 32-bit pixel rendition of a canvas featuring a pink computer keyboard. Green text centered in the foreground reads Code."
+          style="width:100%;">
+      </a>
+      <a href="pages/about.html">
+        <img class="img" onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="images/aboutIconBig.png"
+          alt="A 32-bit image of a pink question mark in front of a blue circle. In the centered foreground green text reads About."
+          style="width:100%;">
+      </a>
+    </div>
   </main>
 
   <footer>
-          <!-- displaying the text from the date object-->
-            <p>
-              <strong><text id="weekd"></text></strong>
-              <strong><text id="when"></text></strong>
-            </p>
-        </footer>
-    </body>
+    <p>
+      Thanks for visiting my page on this lovely
+      <text id="weekd"></text>!
+    </p>
+  
+  </footer>
+</body>
+
 </html>

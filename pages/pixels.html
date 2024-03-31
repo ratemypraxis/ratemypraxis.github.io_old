@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/pixelIcon.png" sizes="32x32">
+
+  <title>Pixels</title>
+
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="../scripts/clock.js"></script>
+  <script src="../scripts/textSize.js"></script>
+
+</head>
+
+
+<body id="bod" onload="refreshTheClock()">
+
+  <!-- Header -->
+  <header>
+    <div class="topMenu">
+      <button class="topMenuItems" onclick=" window.open('music.html','_self')">Music</button>
+      <button class="topMenuItems" onclick=" window.open('video.html','_self')">Video</button>
+      <button class="topMenuItems" onclick=" window.open('code.html','_self')">Code</button>
+      <button class="topMenuItems" onclick=" window.open('about.html','_self')">About</button>
+    </div>
+    <h1>
+      <button id="pageTitle" onclick=" window.open('../index.html','_self')">Pixels</button>
+    </h1>
+    <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_js_image_grid.asp  -->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <IMG SRC="../images/menuIcon.svg"
+          ALT="Three black lines parallel on the horizontal axis symbolic of a menu button." style="width: auto;">
+      </button>
+      <div class="dropdown-content">
+        <a href="../index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="video.html">Video</a>
+        <a href="code.html">Code</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Flexible Photo Grid adapted from W3:https://www.w3schools.com/howto/howto_js_image_grid.asp  -->
+    <div class="row">
+      <div class="columnP">
+        <picture>
+          <img class="img" src="../images/pixel1.jpg"
+            alt="A 128-bit pixel rendition of a person smelling pink flowers on a tree." style="width:100%;">
+        </picture>
+
+        <picture>
+          <!-- <source media="(max-width:1250px)" srcset="images/pixel6.png"> -->
+          <img class="img" src="../images/pixel6.png"
+            alt="A 128-bit image of red show curtains on a checkered stage. In the marginal foreground an arm holds a smartphone with an image of a frog on it on the left and another arm holds up a microphone on the left."
+            style="width:100%;">
+        </picture>
+      </div>
+
+      <div class="columnP">
+        <picture>
+          <img class="img" src="../images/pixel5.gif"
+            alt="A pixelated animation of a 3D inspired ball featuring the Faycebook Going icon bouncing around before spray painting some graffiti which reads Ada."
+            style="width:100%;">
+        </picture>
+
+        <picture>
+          <img class="img" src="../images/pixel3.png"
+            alt="A 128 bit rendition of a slightly ajar fron door on a green wall. A small black table with a partially folded tabletop and black chair lean against the wall. An orange outline in the shape of the state of Florida is overlayed on the image."
+            style="width:100%;">
+        </picture>
+
+        <picture>
+          \ <img class="img" src="../images/pixel4.png" alt="A 128 bit rendition of a wall socket on a tan wall."
+            style="width:100%;">
+        </picture>
+      </div>
+
+      <div class="columnP">
+        <picture>
+          <img class="img" src="../images/pixel2.gif"
+            alt="A 128 bit animation of a street food card on the side of a dark, empty road in the rain. There is a person figure inside moving around and moving their hands and a screen at the top of the car plays a spinning animation of the word special."
+            style="width:100%;">
+        </picture>
+
+        <picture>
+          <img class="img" src="../images/pixel7.png"
+            alt="A 128 bit rendition of a closeup of a blue-green pond where three lilypads of varying shades of green are visible."
+            style="width:100%;">
+        </picture>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      Thanks for visiting my page on this lovely
+      <text id="weekd"></text>
+      <text id="when"></text>!
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/codeIcon.png" sizes="32x32">
+
+  <title>Code</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="../scripts/clock.js"></script>
+  <script src="../scripts/textSize.js"></script>
+
+</head>
+
+<body id="bod" onload="refreshTheClock()">
+
+  <!-- Header -->
+  <header>
+    <div class="topMenu">
+      <button class="topMenuItems" onclick=" window.open('music.html','_self')">Music</button>
+      <button class="topMenuItems" onclick=" window.open('video.html','_self')">Video</button>
+      <button class="topMenuItems" onclick=" window.open('pixels.html','_self')">Pixels</button>
+      <button class="topMenuItems" onclick=" window.open('about.html','_self')">About</button>
+    </div>
+
+    <h1>
+      <button id="pageTitle" onclick=" window.open('../index.html','_self')">Code</button>
+    </h1>
+
+    <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <IMG SRC="../images/menuIcon.svg"
+          ALT="Three black lines parallel on the horizontal axis symbolic of a menu button.">
+      </button>
+      <div class="dropdown-content">
+        <text style="font-size: 20px">
+          <a href="../index.html">Home</a>
+          <a href="pixels.html">Pixels</a>
+          <a href="music.html">Music</a>
+          <a href="video.html">Video</a>
+          <a href="about.html">About</a>
+        </text>
+      </div>
+    </div>
+  </header>
+
+  <main id="all">
+    <div class="row">
+      <div class="columnP">
+        <!-- 1A -->
+        <div class="box">
+          <div class="textBox">
+            <span id="boxTitle">
+              <p>
+                Papernet [2023]
+              </p>
+            </span>
+            <p style="text-align: center;">
+              A small network between users around the world and a single thermal printer in NYC.
+              Made as a final project for Shawn Van Every's course titled "Live Web".
+              Learn more on <a href="https://github.com/ratemypraxis/papernet">the project repo</a>.
+            </p>
+          </div>
+          <picture id="image-container">
+            <img class="img" id="default-image" src="../images/ylangPapernet.jpg"
+              alt="Photo of a robotic mechanism in wooden casing with a small printer atop and a small paper shredder below, paper coming out of the printer is fed into the shredder and shown shredded below."
+              style="width:100%;">
+          </picture>
+        </div>
+        <!-- 1B -->
+        <div class="box">
+          <div class="textBox">
+            <span id="boxTitle">
+              <p>
+                slowchat [2023]
+              </p>
+            </span>
+            <p style="text-align: center;">
+              A slow paper-based TCP video chat made in collaboration with Jo Suk.
+              This was a semester-long project made in Mark Lam's course titled "Re-Decentralizing the Internet".
+              Learn more on <a href="https://github.com/ratemypraxis/slowchat">our repo</a>.
+            </p>
+          </div>
+          <picture id="sc">
+
+            <img class="img" id="scdefault" src="../images/slowchat.png"
+              alt="Photo of a robotic mechanism in wooden casing with a small printer atop and a small paper shredder below, paper coming out of the printer is fed into the shredder and shown shredded below."
+              style="width:100%;">
+          </picture>
+        </div>
+        <!-- 1C -->
+        <div class="box">
+          <div class="textBox">
+            <span id="boxTitle">
+              <p>
+                ShotSpotter Analysis [2023]
+              </p>
+            </span>
+            <p style="text-align: center;">
+              A data analysis of Chicago's use of the algorithmic policing tool "ShotSpotter".
+              This was a final project for a course titled "Data Analysis, Mapping & Storytelling" taught by Lucy Block
+              & Patrick Spauster.
+              Read the full data story <a
+                href="https://medium.com/@sh4712/is-ai-over-policing-chicagos-communities-of-color-3d2c2374695e">on
+                Medium</a>.
+            </p>
+          </div>
+          <picture id="sc">
+
+            <img class="img" id="scdefault" src="../images/ssMap.png"
+              alt="Photo of a robotic mechanism in wooden casing with a small printer atop and a small paper shredder below, paper coming out of the printer is fed into the shredder and shown shredded below."
+              style="width:100%;">
+          </picture>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- second column below -->
+      <div class="columnP">
+        <div class="box">
+          <div class="textBox">
+            <!-- 2A -->
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Virus-Free Personality Quiz [2023]
+            </p>
+            <p style="text-align: center;">
+              A mildly specific spam simulator made with @p5xjs & the OpenAI API during Yining Shi's course 'Machine
+              Learning for the Web'. Learn more on <a
+                href="https://github.com/ratemypraxis/virus_free_personality_quiz">the repo</a>.
+            </p>
+          </div>
+          <picture>
+
+            <img class="img" src="../images/virus.gif"
+              alt="Screencap of a website with a livestreamed camera feed & accompaying chat room. The stream seems to change based on web visitor location."
+              style="width:100%;">
+          </picture>
+        </div>
+        <!-- 2B -->
+        <div class="box">
+          <div class="textBox">
+
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Insecam Roulette [2023]
+            </p>
+            <p style="text-align: center;">
+              Automated insecam based chat app.
+              Concept by ylang cao. Final project for Molly Soda's "Streaming Against the
+              Current" course.
+              Learn more on <a href="https://github.com/ratemypraxis/insecamRoulette/">the repo</a>.
+            </p>
+          </div>
+          <picture>
+            <img class="img" src="../images/insec.gif"
+              alt="Screencap of a website with a livestreamed camera feed & accompaying chat room. The stream seems to change based on web visitor location."
+              style="width:100%;">
+          </picture>
+        </div>
+        <!-- 2C -->
+        <div class="box">
+          <div class="textBox">
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Bot Sermon [2020]
+            </p>
+            <p style="text-align: center;">
+              A Twitter bot that re-fashioned early computer instructional literature & religious documents into an
+              automated preacher.
+              This project came from a course called "Reading & Writing Electronic Text" taught by Allison Parrish.
+            </p>
+          </div>
+          <picture>
+            <img class="img" src="../images/botSermon.png" alt="Screenshot of a twitter account with recent tweets."
+              style="width:100%;">
+          </picture>
+          <!--                     <a class="twitter-timeline" data-height="700" data-theme="dark" href="https://twitter.com/BotSermon?ref_src=twsrc%5Etfw">Tweets by BotSermon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                 -->
+
+        </div>
+
+        <!-- third column below -->
+
+      </div>
+      <div class="columnP">
+        <!-- 3A -->
+        <div class="box">
+          <div class="textBox">
+
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Pixel Press [2023]
+            </p>
+            <p style="text-align: center;">
+              A toy for engaging young audiences with the concept of digital imaging.
+              Made in collaboration with Josephine Wang as a midterm for Sharon De La Cruz & Khushbu Kshirsagar's course
+              Designing Curiosity Portals.
+              Learn more on <a href="https://github.com/ratemypraxis/pixelPress/tree/main">our repo</a>.
+            </p>
+          </div>
+          <picture id="pp">
+
+            <img id="ppdefault" class="img" src="../images/pixelPress1.png"
+              alt="Screencap of a website with a livestreamed camera feed & accompaying chat room. The stream seems to change based on web visitor location."
+              style="width:100%;">
+          </picture>
+        </div>
+
+        <!-- 3B   -->
+        <div class="box">
+          <div class="textBox">
+
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Chuchero Plus [2022]
+            </p>
+            <p style="text-align: center;">
+              A movement controlled music instrument & LED visualizer.
+              Made in collaboration with Alfonssette Medina as a final project for a couse in Physical Computing taught
+              by Yeseul Song.
+              Learn more on <a href="https://github.com/ratemypraxis/pixelPress/tree/main">our repo</a>.
+            </p>
+          </div>
+          <video width="100%" height="auto" controls autoplay loop muted controls>
+            <source src="../vids/chucheroPlusDemo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- 3C -->
+        <div class="box">
+          <div class="textBox">
+
+            <p id="boxTitle" style="text-align: center;" style="font-weight: bolder;">
+              Serenity Local [2023]
+            </p>
+            <p style="text-align: center;">
+              An automatic sound installation within a found magazine distribution box.
+              Made as a final project for Sharon De La Cruz & Khushbu Kshirsagar's course Designing Curiosity Portals
+              (formerly Stem Accessibility).
+            </p>
+            <picture>
+              <img class="img" src="../images/serenityLocal.jpg"
+                alt="Photograph of a person in an orange puffer jacket & New York Yankee branded sneakers deated with their head inside of a white magazine distribution box."
+                style="width:100%;">
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+    </div>
+    <script src="../scripts/hoverGif.js"></script>
+
+  </main>
+  <footer>
+    <p>
+      Thanks for visiting my page on this lovely
+      <text id="weekd"></text>
+      <text id="when"></text>!
+    </p>
+    <p>
+      <strong><text id="textSize"> Text Size:</text></strong>
+      <button onclick="smallText()"> Small </button>
+      <button onclick="largeText()"> Large </button>
+
+      <strong><span id="currentText"> | Current = </span></strong>
+      <span id=textStatus>Small</span>
+    </p>
+  </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>

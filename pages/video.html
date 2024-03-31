@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/videoIcon.png" sizes="32x32">
+
+    <title>Video</title>
+
+    <link rel="stylesheet" href ="../stylesheets/style.css">
+    <script src="../scripts/clock.js"></script>
+    <script src="../scripts/textSize.js"></script>
+  </head>
+  <!-- date object code built from an example and notes by Professor Sofy Yuditskaya -->
+  <!-- using the date object to get the day of the week then changing the page background color to a different shade of purple each day -->
+  <body id="bod" onload ="refreshTheClock()">
+
+
+    <!-- Header -->
+    <header>
+      <div class="topMenu">
+        <button class="topMenuItems" 
+          onclick=" window.open('music.html','_self')">Music</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('pixels.html','_self')">Pixels</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('code.html','_self')">Code</button>
+        <button class="topMenuItems" 
+        onclick=" window.open('about.html','_self')">About</button>
+     </div>
+     <h1>
+      <button id="pageTitle" 
+      onclick=" window.open('../index.html','_self')">Video</button>
+      </h1>
+
+      <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          <IMG SRC="../images/menuIcon.svg" ALT="Three black lines parallel on the horizontal axis symbolic of a menu button.">
+        </button>
+        <div class="dropdown-content">
+          <text style="font-size: 20px">
+          <a href="../index.html">Home</a>
+          <a href="pixels.html">Pixel</a>
+          <a href="music.html">Music</a>
+          <a href="code.html">Code</a>
+          <a href="about.html">About</a>
+        </text>
+        </div>
+      </div>
+    </header>
+
+  <main>
+    <!-- Flexible Photo Grid adapted from W3:https://www.w3schools.com/howto/howto_js_image_grid.asp  -->
+    <div class="row">
+      <div class="columnV">
+        <p>
+          <iframe title="Short film titled Watching U Watching Me" class="vids" width="99%" height="auto" src="https://player.vimeo.com/video/770493528?h=731e838814" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <p>
+          <iframe title="Short film titled Memory Playthrough" class="vids" width="99%" height="auto" src="https://player.vimeo.com/video/671977549?h=9715c231f5" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <!-- <p>
+          <iframe title="Music video for a track called ha ha ha by 'Sam'" class="vids" width="99%" height="auto" src="https://player.vimeo.com/video/609562351?h=7cb427cd11" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p> -->
+      </div>
+      <div class="columnV">
+        <p>
+          <iframe title="Short film titled Fundamental Indeterminancy" class="vids" width="99%" height="auto" src="https://player.vimeo.com/video/691938689?h=49ca002f4a" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <p>
+          <iframe title="Short film titled Sickles St." class="vids" width="99%" height="auto" src="https://player.vimeo.com/video/246886817?h=8796969576" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p>
+        <!-- <p>
+          <iframe title="Short film titled Feel Old Yet?" class="vids" width="99%" height="auto" 
+          src="https://player.vimeo.com/video/418598866?h=c9fae18c7f" 
+          frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        </p> -->
+        </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Thanks for visiting my page on this lovely
+      <text id="weekd"></text>
+      <text id="when"></text>!
+    </p>
+  </footer>
+    </body>
+  </html>

@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* font downloaded from dafont.com originally called Arcade Classic and posted by the user Glitch: https://www.dafont.com/arcade-classic.font */
+@font-face {
+  font-family: pixelGlitch;
+  src: url(../fonts/arcadeGlitch.ttf);
+}
+
+/* font downloaded from dafont.com originally called Our Arcade Games and posted by the user Font Bureau: https://www.dafont.com/our-arcade-games.font */
+@font-face {
+  font-family: pixel;
+  src: url(../fonts/arcade.TTF);
+}
+
+@font-face {
+  font-family: ocr;
+  src: url(../fonts/OCRAEXT.TTF);
+}
+
+@font-face {
+  font-family: basic;
+  src: url(../fonts/PAPL_.ttf);
+}
+
+@font-face {
+  font-family: lib;
+  src: url(../fonts/libMono/libMono.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 2px solid #0C4170;
+  background-color: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1A470F;
+  width: 92%;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #700C0E;
+}
+
+h1 {
+  margin-top: 1pt;
+  margin-bottom: 1pt;
+}
+
+header {
+  text-align: center;
+  background: radial-gradient(circle, rgba(112, 12, 14, 1) 0%, rgba(112, 12, 14, 1) 50%, rgba(101, 9, 11, 1) 100%);
+  font-family: ocr;
+  /* font-size: 30px; */
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px black;
+
+  margin-top: 10px;
+  padding: 20px;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+/* tagline for mobile*/
+#intro {
+  background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
+  font-size: 18px;
+  color: black;
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: basic;
+  font-weight: bolder;
+  width: 98%;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid gray;
+}
+
+
+#rcorner {
+  border-radius: 25px;
+  border: 2px solid pink;
+  padding: 20px;
+  background: linear-gradient(45deg, rgb(85, 17, 85) 0%, rgba(255, 94, 130, 0.5) 100%);
+}
+
+#pageTitle {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  color: #256017;
+  font-family: pixel;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  padding: 15px;
+  font-size: 45pt;
+  background: none;
+  cursor: url('../cursors/redLink.cur'), default;
+}
+
+/* #embedCode {
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+} */
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-top: 0pt;
+  cursor: url('../cursors/red.cur'), default;
+}
+
+
+.columnH img {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+
+.columnP img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+}
+
+.columnV img {
+  width: 100%;
+  cursor: url('../cursors/red.cur'), default;
+
+}
+
+
+/* .column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+} */
+
+.columnL img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+
+.box {
+  background-color: #0C4170;
+  margin-top: 15px;
+  align-content: center;
+  justify-content: center;
+  font-family: basic;
+  margin: auto;
+  width: 98%;
+  padding: 35px;
+  border-width: 2px;
+  border: solid black;
+  box-shadow: 3px 3px 3px rgb(63, 63, 93);
+  border-radius: 15px;
+  padding: 20pt;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  cursor: url('../cursors/red.cur'), default;
+}
+
+.textBox {
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  cursor: url('../cursors/redTextSel.cur'), default;
+  margin: 1px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  color: white;
+  font-family: pixel;
+  text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+#boxTitle {
+  font-size: 17pt;
+  font-weight: bolder;
+  text-align: center;
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+/* #embedBox {
+  background-color: transparent;
+  margin-top: 30px;
+  align-content: center;
+  margin: auto;
+  width: 98%;
+  margin-bottom: 20px;
+  cursor: url('../cursors/red.cur'), default;
+} */
+
+/* #embed {
+  background-color: transparent;
+  margin-top: 15px;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  border-width: 1px;
+  border-radius: 25px;
+  color: white;
+  border: solid;
+  cursor: url('../cursors/redLink.cur'), default;
+} */
+
+
+
+.symbols {
+  background-color: trans;
+  margin-top: 2px;
+  margin-left: 15%;
+  vertical-align: center;
+  max-width: 75%;
+  padding: 15px;
+  border-width: 5px;
+  border-color: purple;
+  border: dotted;
+  align-content: center;
+}
+
+#about {
+  font-family: basic;
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+/* for about page */
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  width: 98%;
+  background-color: #700C0E;
+  align-content: center;
+  justify-content: center;
+  font-family: basic;
+  margin: auto;
+  padding: 35px;
+  border-width: 2px;
+  border: solid black;
+  box-shadow: 3px 3px 3px rgb(63, 63, 93);
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  cursor: url('../cursors/red.cur'), default;
+}
+
+.flexLeft {
+  padding: 5px;
+  flex: 70%;
+  font-size: 18px;
+  background-color: lightgrey;
+  border: solid;
+  border-color: #3C3E41;
+  border-width: 10px;  
+  cursor: url('../cursors/redTextSel.cur'), default;
+}
+
+.flexRight {
+  padding: 5px;
+  flex: 30%;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 800px) {
+  .columnP {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+
+  header {
+    /* background-color: #700C0E; */
+    background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
+    cursor: url('../cursors/red.cur'), default;
+
+
+  }
+
+  .columnV {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .vids {
+    height: 400px;
+  }
+
+
+  .topMenu {
+    display: none;
+  }
+
+  footer {
+    width: 98%;
+    /* margin: 20px; */
+  }
+
+  body {
+    background: linear-gradient(90deg, rgba(120, 94, 149, 1) 0%, rgba(108, 79, 140, 1) 35%, rgba(90, 39, 146, 1) 100%);
+
+  }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+  .flexRight, .flexLeft {
+    flex: 100%;
+  }
+
+  .columnP {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .box {
+    box-shadow: none;
+  }
+
+  #pageTitle {
+    margin-top: 10px;
+    border: 3px solid black;
+    /* background-color: #686868; */
+    background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
+    color: #785e95;
+    width: 99%;
+    margin-bottom: -10px;
+
+  }
+
+  header {
+    background: none;
+    /* background-color: #1a470f; */
+    /* border: 0px none; */
+    box-shadow: none;
+    padding: 0%;
+    cursor: url('../cursors/red.cur'), default;
+
+  }
+
+  .codeBox {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  header {
+    width: 92%;
+  }
+
+  body {
+    background: none;
+    background-color: none;
+
+    background-image: url("../images/grid.jpg");
+  }
+
+
+  .columnV {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .vids {
+    height: 240px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  footer {
+    width: 94%;
+    margin: 20px;
+  }
+}
+
+
+
+#all {
+  font-family: pixel;
+  font-size: 18px;
+  margin-top: 1px;
+
+}
+
+#textStatus,
+#currentText,
+#textSize {
+  font-family: basic;
+  font-size: 18px;
+}
+
+
+body {
+  cursor: url('../cursors/rainbow.cur'), default;
+  font-family: basic;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+a:link {
+  color: #0C4170;
+}
+
+a:visited {
+  color: #700C0E;
+}
+
+a:hover {
+  color: #256017;
+  cursor: url('../cursors/redLink.cur'), default;
+
+}
+
+a:active {
+  color: #5a2792;
+}
+
+button {
+  cursor: url('../cursors/redLink.cur'), default;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+  font-family: basic;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 10pt;
+  margin-bottom: 5pt;
+  background-color: #700C0E;
+}
+
+.img {
+  display: block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* top menu for mobile*/
+.topMenu {
+  background: linear-gradient(90deg, rgba(120, 94, 149, 1) 0%, rgba(108, 79, 140, 1) 35%, rgba(90, 39, 146, 1) 100%);
+  vertical-align: middle;
+  width: 98%;
+  padding: 10pt;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 15px;
+}
+
+
+.topMenuItems {
+  vertical-align: middle;
+  color: black;
+  font-size: 17px;
+  border: 1px solid white;
+  padding: 5px;
+  margin-left: 4pt;
+  margin-right: 4pt;
+  border-radius: 25px;
+  background-color: lightgrey;
+  width: 20%;
+  font-family: basic;
+  box-shadow: 5px 5px 5px black;
+
+}
+
+/* dropdown menu code adapted from W3*/
+.dropbtn {
+  cursor: url('../cursors/redLink.cur'), default;
+  color: black;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 15px;
+  background: #1A470F;
+  position: absolute;
+  right: 10%;
+  top: 8px;
+  position: absolute;
+}
+
+.dropdown {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 30px;
+  vertical-align: middle;
+}
+
+.dropdown-content {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 9.5%;
+  top: 5.1%;
+  border-radius: 25px;
+  background-color: #256017;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 59.5pt;
+  margin-right: -20px;
+  vertical-align: middle;
+  font-size: 20px;
+  border: 3px solid white;
+}
+
+.dropdown-content a {
+  color: white;
+  background-color: #256017;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: pixel;
+  display: block;
+  font-size: 18pt;
+  border-radius: 30pt;
+}
+
+#image {
+  position: absolute;
+}
+
+.dropdown-content a:hover {
+  background-color: #1A470F;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  font-family: basic;
+  font-size: 18px;
+  background-color: #1a470f;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: auto;
+  /* width: 60%; */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#when,
+#weekd {
+  font-family: basic;
+  font-size: 18px;
+}
