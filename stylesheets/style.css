@@ -353,9 +353,19 @@ p {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
-  .flexRight, .flexLeft {
+  .flexRight{
     flex: 100%;
+    margin-top: 10px;
   }
+
+  .flexLeft{
+    flex: 96%;
+
+  }
+  .flexContainer {
+    padding: 5px;
+    width: 96%;
+}
 
   .columnP {
     -ms-flex: 100%;
@@ -368,13 +378,13 @@ p {
   }
 
   #pageTitle {
-    margin-top: 10px;
+    margin-top: 5px;
     border: 3px solid black;
     /* background-color: #686868; */
     background-image: linear-gradient(315deg, #686D76, #FFFFFF, #686D76);
     color: #785e95;
     width: 99%;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 
   }
 
@@ -453,7 +463,6 @@ p {
 
 
 body {
-  cursor: url('../cursors/rainbow.cur'), default;
   font-family: basic;
   font-size: 16px;
   margin: 0;
@@ -516,11 +525,11 @@ button {
 .topMenuItems {
   vertical-align: middle;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
   border: 1px solid white;
   padding: 5px;
-  margin-left: 4pt;
-  margin-right: 4pt;
+  margin-left: 2px;
+  margin-right: 2px;
   border-radius: 25px;
   background-color: lightgrey;
   width: 20%;
