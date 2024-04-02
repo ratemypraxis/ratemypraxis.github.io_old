@@ -563,6 +563,7 @@ footer {
   /* width: 60%; */
   margin-bottom: 20px;
   text-align: center;
+  cursor: url('../cursors/red.cur'), default;
 }
 
 #when,
