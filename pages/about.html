@@ -10,11 +10,10 @@
 
   <link rel="stylesheet" href="../stylesheets/style.css">
   <script src="../scripts/clock.js"></script>
+
 </head>
 
 <body id="bod" onload="refreshTheClock()">
-  <script src="../scripts/textSize.js"></script>
-
   <header>
     <div class="topMenu">
       <button class="topMenuItems" onclick=" window.open('music.html','_self')">Music</button>
@@ -28,11 +27,11 @@
 
     <!-- Hoverable drop down menu adapted from W3:https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
     <div class="dropdown">
-      <button class="dropbtn">
+      <button class="dropbtn" id="menuButton">
         <IMG SRC="../images/menuIcon.svg"
           ALT="Three black lines parallel on the horizontal axis symbolic of a menu button.">
       </button>
-      <div class="dropdown-content">
+      <div class="dropdown-content" id="menuContent">
         <text style="font-size: 20px">
           <a href="../index.html">Home</a>
           <a href="pixels.html">Pixels</a>
