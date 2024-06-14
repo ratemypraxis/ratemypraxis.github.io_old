@@ -59,6 +59,12 @@ h1 {
   margin-bottom: 1pt;
 }
 
+h2 {
+  /* margin-top: 1pt;
+  margin-bottom: 1pt; */
+  font-size: 18px;
+}
+
 header {
   text-align: center;
   background: radial-gradient(circle, rgba(112, 12, 14, 1) 0%, rgba(112, 12, 14, 1) 50%, rgba(101, 9, 11, 1) 100%);
@@ -224,6 +230,7 @@ p {
 
 #about {
   font-family: basic;
+  padding: 10px;
   cursor: url('../cursors/redTextSel.cur'), default;
 }
 
