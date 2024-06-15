@@ -63,6 +63,7 @@ h2 {
   /* margin-top: 1pt;
   margin-bottom: 1pt; */
   font-size: 18px;
+  text-align: center;
 }
 
 header {
@@ -230,11 +231,49 @@ p {
 
 #about {
   font-family: basic;
-  padding: 10px;
+  /* padding: 10px; */
   cursor: url('../cursors/redTextSel.cur'), default;
 }
 
-/* for about page */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.custom-table td {
+  /* border: 1px solid black; */
+  border-radius: 2px;
+  vertical-align: top;
+  padding: 7px; 
+  position: relative; 
+}
+
+.custom-table td.header-column {
+  border-right: 1px solid black; 
+    text-align: center; 
+  vertical-align: middle; 
+  
+}
+
+.custom-table tr {
+  border-bottom: 1px solid black; 
+}
+
+.connect-table {
+  width: 100%;
+  border: none; 
+}
+
+.connect-table td {
+  border: none; 
+  padding: 5px; 
+}
+
+.connect-table td:first-child {
+  border-right: 1px solid black; 
+}
+
+
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
@@ -256,19 +295,19 @@ p {
 }
 
 .flexLeft {
-  padding: 5px;
-  flex: 70%;
+  /* padding: 5px; */
+  flex: 75%;
   font-size: 18px;
   background-color: lightgrey;
   border: solid;
-  border-color: #3C3E41;
+  border-color: #700C0E;
   border-width: 10px;  
   cursor: url('../cursors/redTextSel.cur'), default;
 }
 
 .flexRight {
   padding: 5px;
-  flex: 30%;
+  flex: 25%;
 }
 
 
