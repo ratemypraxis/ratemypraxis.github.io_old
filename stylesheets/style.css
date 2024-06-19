@@ -252,6 +252,8 @@ p {
   border-right: 1px solid black; 
     text-align: center; 
   vertical-align: middle; 
+  font-weight: bolder;
+  /* width: 100%; */
   
 }
 
@@ -309,6 +311,33 @@ p {
   padding: 5px;
   flex: 25%;
 }
+
+@media screen and (max-width: 800px) {
+  .flexLeft {
+    flex: 100%; 
+  }
+
+  .custom-table td,
+  .connect-table td {
+    display: block; 
+    width: 100%; 
+    border: none; 
+    padding: 15px; 
+  }
+
+  .custom-table td.header-column {
+    text-align: left; 
+    margin-bottom: -45px;
+    font-weight: normal;
+    border-right: none;
+  }
+
+  .connect-table td:first-child {
+    border-right: none; 
+    margin-bottom: -45p x;
+  }
+}
+
 
 
 
